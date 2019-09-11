@@ -2,18 +2,7 @@
 @import 'common';
 @import 'welcome-page';
 
-body{
-    background: no-repeat url("../images/seared-pear-salad.jpg");
-    background-size: cover;
-}
 
-.heading{
-    font-size:80px;
-    font-weight:bold;
-    color:#18A369;
-    letter-spacing: .015em;
-    margin-top:400px;
-}
 
   @keyframes spin {
     0% { transform: rotate(0deg); }

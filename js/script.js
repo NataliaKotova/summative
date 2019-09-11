@@ -1,12 +1,10 @@
-function Course(name, ingredients, price, properties, imageUrl){
-    this.name = name;
-    this.ingredients = ingredients;
-    this.price=price;
-    this.properties=properties;
-    this.imageUrl=imageUrl;
-}
-function OrderLine(course,count){
-    this.course=course;
-    this.count=count;
+function navigate(currentPage, nextPage){
+    jQuery('#' + currentPage).hide();
+    jQuery('#' + nextPage).show();
 }
 
+$(document).ready(function(){
+    $(".welcome-page__container--button").click(function(){
+      navigate('welcome-page','landing-page');
+    });
+  });
