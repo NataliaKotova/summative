@@ -48,22 +48,33 @@ body {
   margin-top: 80px;
   font-weight: bold; }
 
-.fa {
-  display: inline-block;
-  top: 10px;
-  right: 10px; }
+.topbar {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  justify-content: space-around;
+  align-items: center; }
+
+.topbar__button {
+  color: red; }
+
+.topbar__button--white {
+  background-color: white;
+  border: 2px solid #18A369;
+  border-radius: 5px;
+  color: #18A369;
+  font-size: 3em; }
+
+.topbar__trolley {
+  flex-basis: 20em; }
 
 .fa-bars {
-  font-size: 4em;
-  float: right;
-  margin-right: 10px;
-  margin-top: 10px; }
+  font-size: 4em; }
 
 .fa-times {
-  font-size: 4em;
-  float: right;
-  margin-right: 10px;
-  margin-top: 10px; }
+  font-size: 4em; }
 
 nav {
   display: none;
