@@ -11,7 +11,7 @@
 </head>
   <body>
     <!--welcome page-->
-    <div id="welcome-page" class="welcome-page__container">
+    <div id="welcome-page" class="welcome-page__container" style="display:none">
       <h1 class="welcome-page__container--heading">KIA ORA</h1>
       <img class="welcome-page__container--logo" src="images/logo.png" alt="logo">
       <input class="welcome-page__container--input" type="text" placeholder="Enter the table number">
@@ -20,14 +20,9 @@
     <!--navigation top bar-->
     
     <div class="topbar">
-      <div class="topbar__button">
-          <button class="topbar__button--white"><img class="topbar__button--bell" src="images/bell.png" alt="bell">call wait staff</button>
-      </div>
-      <div class="bell">
-          <img  src="images/trolley.png" alt="trolley">
-      </div>
-      <div>
-          <nav class="topbar__navigation-menu">
+          <button class="topbar__button--white"><img class="topbar__button--bell" src="images/bell-green.png" alt="bell">call wait staff</button>
+          <img class="topbar__navigation--trolley" src="images/trolley.png" alt="trolley">
+          <nav class="topbar__navigation--menu">
               <i id="close" class="fas fa-times"></i>
               <ul>
                 <li><a href="">CHECK ORDER</a></li>
@@ -36,19 +31,31 @@
                 <li><a href="">SUBSCRIBE TO NEWSLETTER</a></li>
                 <li><a href="">MORE</a></li>
               </ul>
-            </nav>
-            
-            <i id="menu" class="fas fa-bars"></i>
-      </div>
-    </div> <!-- end of topbar-->
+          </nav>
+          <i id="menu" class="fas fa-bars"></i>
+    </div><!-- end of topbar-->
     <!--landing page-->
-    <div id="landingPage" class="landing-page__container" style="display:none;">
-      
+    <div id="landingPage" class="landing-page" style="display:none">
+      <h1 class="page__header">MENU</h1>
+        <div class="landing-page__card">
+            <div class="landing-page__image">
+                <img src="images/house-cured-salmon-asparagus.jpg" alt="all day brunch">
+            </div>
+            <div class="landing-page__category">ALL DAY BRUNCH</div>
+        </div>
+    </div>
+    <!--all day brunch page-->
+    <div id="brunchPage" class="menu-page">
+      <div class="page__header">ALL DAY BRUNCH</div>
+      <div class="menu-page__card">
+        <div class="menu-page__card--item">FREE RANGE EGGS (V, GF)</div>
+        <div class="menu-page__card--price">18</div>
+        <img class="menu-page__card--image" src="images/dish.jpg" alt="free range eggs">
+        <span class="menu-page__card--info">on toasted polenta bread</span>
+        <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="">
+      </div>
     </div>
     <div id="myOrder">
-
-    </div>
-    <div id="brunchPage">
 
     </div>
 </body>

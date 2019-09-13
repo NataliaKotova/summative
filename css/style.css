@@ -7,6 +7,12 @@ html,
 body {
   height: 100%; }
 
+.page__header {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
 .welcome-page__container--heading {
   font-size: 80px;
   font-weight: bold;
@@ -49,26 +55,28 @@ body {
   font-weight: bold; }
 
 .topbar {
-  width: 100%;
   height: 10em;
   display: flex;
   flex-direction: row;
-  background-color: blue;
   justify-content: space-around;
   align-items: center; }
-
-.topbar__button {
-  color: red; }
 
 .topbar__button--white {
   background-color: white;
   border: 2px solid #18A369;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #18A369;
-  font-size: 3em; }
+  font-size: 3em;
+  vertical-align: middle;
+  padding: 20px; }
 
-.topbar__trolley {
-  flex-basis: 20em; }
+.topbar__button--bell {
+  width: 70px;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.topbar__navigation--trolley {
+  width: 100px; }
 
 .fa-bars {
   font-size: 4em; }
@@ -87,10 +95,51 @@ nav {
 .active {
   display: block; }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
+.landing-page {
+  padding-left: 2em;
+  padding-right: 2em; }
+
+.landing-page__image {
+  height: 25em;
+  overflow: hidden; }
+
+.landing-page__category {
+  background-color: #18A369;
+  color: white;
+  padding: 0.5em;
+  font-size: 3em;
+  text-align: center; }
+
+.menu-page__card {
+  display: grid;
+  grid-template-columns: 40% 45% 15%;
+  grid-template-rows: 25% auto; }
+  .menu-page__card div {
+    border: 1px solid #18A369; }
+
+.menu-page__card--item {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 3em;
+  padding-bottom: 1em; }
+
+.menu-page__card--price {
+  grid-column-start: 3;
+  font-size: 3em;
+  color: black;
+  padding-bottom: 1em;
+  justify-self: center; }
+
+.menu-page__card--image {
+  grid-column-start: 1;
+  width: 100%; }
+
+.menu-page__card--info {
+  font-size: 2em; }
+
+.menu-page__card--circle-plus {
+  width: 6em;
+  justify-self: center;
+  align-self: center; }
 
 /*# sourceMappingURL=style.css.map */

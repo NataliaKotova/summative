@@ -1,0 +1,17 @@
+
+.landing-page{
+    padding-left:2em;
+    padding-right:2em;
+}
+.landing-page__image{
+   height:25em;
+   overflow:hidden;
+   
+}
+.landing-page__category{
+   background-color:$primaryColor;
+   color:white;
+   padding:0.5em;
+   font-size:3em;
+   text-align: center;
+}
