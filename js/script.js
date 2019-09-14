@@ -15,5 +15,8 @@ $(document).ready(function(){
     $('#close').click(function(){
       $('nav').removeClass('active');
     });
-
+  //modal - more information about dish
+  $('#button1').on('click', function() {
+    $('#openModal').show();
+});
 });

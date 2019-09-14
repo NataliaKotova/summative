@@ -19,8 +19,14 @@
     width:70px;
     vertical-align: middle;
     margin-right:10px;
+    
 }
-
+.topbar__navigation--logo{
+    position: absolute;
+    top:1em;
+    left:1em;
+    width:3em;
+}
 .topbar__navigation--trolley{
     width:100px;
 }
@@ -30,6 +36,10 @@
 }
 .fa-times{
     font-size: 4em;
+    font-size:2em;
+    position:absolute;
+    top:0.4em;
+    right:0.6em;
 }
 nav{
     display:none;
@@ -41,4 +51,22 @@ nav{
 }
 .active{
     display:block;
+    width:100%;
+    font-size:3em;
+    background-color:white;
+    ul{
+        margin-top:7em;
+        margin-left:3em;
+        list-style: none;
+    }
+    a{
+        margin-left:1em;
+    }
+    text-align:left;
 }
+.topbar__navigation--menu-list{
+    display:grid;
+}
+
+
+

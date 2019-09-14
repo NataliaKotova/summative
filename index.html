@@ -1,14 +1,19 @@
+<!--
+YOOBEE
+student:Natalia Kotova
+project: summative, hospitality table ordering
+single page application, html, css and javascript 
+-->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>title</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <script src="js/script.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+  <!--body-->
   <body>
     <!--welcome page-->
     <div id="welcome-page" class="welcome-page__container" style="display:none">
@@ -23,17 +28,18 @@
           <button class="topbar__button--white"><img class="topbar__button--bell" src="images/bell-green.png" alt="bell">call wait staff</button>
           <img class="topbar__navigation--trolley" src="images/trolley.png" alt="trolley">
           <nav class="topbar__navigation--menu">
+              <img class="topbar__navigation--logo" src="images/logo.png" alt="logo">
               <i id="close" class="fas fa-times"></i>
-              <ul>
-                <li><a href="">CHECK ORDER</a></li>
-                <li><a href="">MENU</a></li>
-                <li><a href="">LEAVE US A FEEDBACK</a></li>
-                <li><a href="">SUBSCRIBE TO NEWSLETTER</a></li>
-                <li><a href="">MORE</a></li>
+              <ul class="topbar__navigation--menu-list">
+                <li><img src="images/trolley.png" alt="#"><a href="">CHECK ORDER</a></li>
+                <li><i class="fas fa-utensils"></i><a href="#brunchPage">MENU</a></li>
+                <li><i class="far fa-comments"></i><a href="#">LEAVE US A FEEDBACK</a></li>
+                <li><i class="far fa-newspaper"></i><a href="#">SUBSCRIBE TO NEWSLETTER</a></li>
               </ul>
           </nav>
           <i id="menu" class="fas fa-bars"></i>
     </div><!-- end of topbar-->
+    
     <!--landing page-->
     <div id="landingPage" class="landing-page" style="display:none">
       <h1 class="page__header">MENU</h1>
@@ -44,14 +50,15 @@
             <div class="landing-page__category">ALL DAY BRUNCH</div>
         </div>
     </div>
-    <!--all day brunch page-->
-    <div id="brunchPage" class="menu-page">
+    
+    <!--manu page - all day brunch-->
+    <div id="brunchPage" class="menu-page" style="display:none">
       <div class="page__header">ALL DAY BRUNCH</div>
       <div class="menu-page__card">
         <div class="menu-page__card--name">VEGGIE BREKKIE (V, GF)</div>
         <div class="menu-page__card--price">18</div>
         <img class="menu-page__card--image" src="images/veggie-brekkie.jpg" alt="veggie brekkie">
-        <span class="menu-page__card--info">on toasted polenta bread</span>
+        <span class="menu-page__card--info">grilled halloumi, beetroot & carrot slaw avocado, hash brown, sprouts, balsamic reduction | add: poached egg 2.5 (ea)</span>
         <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="add item">
       </div>
       <div class="menu-page__line"></div>
@@ -79,17 +86,40 @@
         <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="add item">
       </div>
       <div class="menu-page__line"></div>
+      <!--link back to top-->
+      <a class="menu-page__back2top" href="#">
+        <span class="return">return to the top</span>
+        <img class="test" src="images/uxpin-icon-set_download.png" alt="">
+        <!--<button class="menu-page__back2top--button">Return to the top</button>-->
+      </a> <!--end of menu page-->
     </div>
-    <!--back to top button-->
-    <a class="menu-page__back2top" href="#">
-      <span class="return">return to the top</span>
-      <img class="test" src="images/uxpin-icon-set_download.png" alt="">
-      
-      <!--<button class="menu-page__back2top--button">Return to the top</button>-->
-    </a>
     
-    <div id="myOrder">
-
+    <div class="item" style="display:none">
+      <div class="item__card">
+        <img class="item__card--image" src="images/veggie-brekkie.jpg" alt="veggie brekkie">
+        <span class="item__card--name">VEGGIE BREKKIE (V, GF)</span>
+        <span class="item__card--price">$18</span>
+        <span class="item__card--info">
+            grilled halloumi, beetroot & carrot slaw avocado, 
+            hash brown, sprouts, balsamic reduction | add: poached egg 2.5 (ea)
+        </span>
+        <span class="item__card--instructions">Special instructions:</span>
+        <input class="item__card--input" type="text" placeholder=" Name">
+        <input class="item__card--input" type="text" placeholder=" Your comments">
+        <button class="item__card--minus">-</button>
+        <span class="item__card--amount">1</span>
+        <button class="item__card--plus">+</button>
+        <button class="item__card--order">ORDER</button>
+      </div>
     </div>
-</body>
+
+    <div id="myOrder">
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
 </html>
