@@ -1,0 +1,33 @@
+.feedback-page{
+    width:90%;
+    margin:0 auto;
+}
+.feedback-form__input{
+    width:99%;
+    height:2em;
+    border:0.5px solid black;
+    border-radius:10px;
+    margin-bottom:1em;
+    font-size:3em;
+    padding:0;
+}
+.feedback-form__textarea{
+    width:99%;
+    margin:0 auto;
+    border-radius:10px;
+    font-size:3em;
+    border:0.5px solid black;
+    margin-bottom:1em;
+}
+.feedback-form__input--submit{
+    width:5em;
+    height:2em;
+    font-size:3em;
+    align-content: center;
+    background-color:$primaryColor;
+    font-weight:bold;
+    color:white;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
+}

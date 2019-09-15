@@ -4,6 +4,7 @@
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
+    margin-top:2em;
 }
 
 .topbar__button--white{
@@ -24,7 +25,7 @@
 .topbar__navigation--logo{
     position: absolute;
     top:1em;
-    left:1em;
+    left:2.5em;
     width:3em;
 }
 .topbar__navigation--trolley{
@@ -41,6 +42,9 @@
     top:0.4em;
     right:0.6em;
 }
+.fa-shopping-cart{
+    font-size: 4em;
+}
 nav{
     display:none;
     z-index: 3;
@@ -52,20 +56,52 @@ nav{
 .active{
     display:block;
     width:100%;
+    height:100%;
     font-size:3em;
     background-color:white;
+
     ul{
         margin-top:7em;
         margin-left:3em;
         list-style: none;
     }
-    a{
-        margin-left:1em;
+    li{
+        margin-bottom:1em;
     }
-    text-align:left;
+    a{
+        margin-right:1em;
+    }
 }
-.topbar__navigation--menu-list{
-    display:grid;
+.topbar__navigation--menu-list {
+    width:80%;
+    text-align: left;
+    .fas,
+    .far{
+        text-align:center;
+        margin-right:1em;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+}
+//shopping cart
+.fa-stack[data-count]:after{
+    position:absolute;
+    left:1.8em;
+    top:-1em;
+    content: attr(data-count);
+    font-size:1em;
+    border-radius:50%;
+    color:black;
+    text-align:center;
+    min-width:2em;
+    font-weight:bold;
+    background: white;
+    border-style:solid;
+  }
+.fa-circle{
+    color:black;
 }
 
 

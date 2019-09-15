@@ -1,0 +1,81 @@
+
+.order-page__items,
+.order-page__items--total{
+    display:grid;
+    grid-template-columns: 10% 60% 15% 15%;
+    margin-left:5em;
+    margin-right:5em;
+    
+}
+.order-page__items--amount{
+    font-size:2.5em;
+    justify-self:center;
+}
+.order-page__items--name{
+    font-size:2.5em;
+    margin-bottom:1em;
+    font-weight:lighter;
+    margin-left:1em;
+}
+.order-page__items--price{
+    font-size:2.5em;
+    justify-self:center;
+}
+.order-page__line{
+    width: 90%;
+    border:1px solid black;
+    margin:0 auto;
+    display:block;
+    margin-bottom:1em;
+}
+.order-page__button{
+    width:60%;
+    height:3em;
+    border:2px solid $primaryColor;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
+    background-color: white;
+    font-size:2.5em;
+    margin-top:1.5em;
+    color:$primaryColor;
+}
+.order-page__items--remove{
+    font-size:2.5em;
+    justify-self:center;
+    margin-bottom:1em;
+    width:2em;
+    height:2em;
+    background-color:white;
+    border:1px solid black;
+    border-radius:10px;
+}
+.order-page__items--total-total{
+    grid-column-start:2;
+    grid-column-end:3;
+    font-size: 2.5em;
+    justify-self:end;
+}
+.order-page__items--total-amount{
+    grid-column-start:3;
+    grid-column-end:4;
+    font-size: 2.5em;
+    justify-self:center;
+    
+}
+.order-page__items--total-price{
+    grid-column-start:4;
+    grid-column-end:5;
+    font-size: 2.5em;
+    justify-self:center;
+}
+.order-page__footer{
+   font-size:3em;
+   height:2.5em;
+   width: 100%;
+   background-color:$primaryColor;
+   color: white;
+   text-align: center;
+   border-top:1px solid $primaryColor;
+   padding-top:1em;
+}

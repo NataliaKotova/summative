@@ -16,7 +16,7 @@ single page application, html, css and javascript
   <!--body-->
   <body>
     <!--welcome page-->
-    <div id="welcome-page" class="welcome-page__container" style="display:none">
+    <div id="welcome-page" class="welcome-page__container">
       <h1 class="welcome-page__container--heading">KIA ORA</h1>
       <img class="welcome-page__container--logo" src="images/logo.png" alt="logo">
       <input class="welcome-page__container--input" type="text" placeholder="Enter the table number">
@@ -25,43 +25,64 @@ single page application, html, css and javascript
     <!--navigation top bar-->
     
     <div class="topbar">
-          <button class="topbar__button--white"><img class="topbar__button--bell" src="images/bell-green.png" alt="bell">call wait staff</button>
-          <img class="topbar__navigation--trolley" src="images/trolley.png" alt="trolley">
+      <button class="topbar__button--white"><img class="topbar__button--bell" src="images/bell-green.png" alt="bell">call wait staff</button>
+        <span class="fa-stack fa-2x has-badge" data-count="0" id="shoppingCart">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-shopping-cart fa-stack-2x" ></i>
+          </span>  
+          
           <nav class="topbar__navigation--menu">
               <img class="topbar__navigation--logo" src="images/logo.png" alt="logo">
               <i id="close" class="fas fa-times"></i>
-              <ul class="topbar__navigation--menu-list">
-                <li><img src="images/trolley.png" alt="#"><a href="">CHECK ORDER</a></li>
-                <li><i class="fas fa-utensils"></i><a href="#brunchPage">MENU</a></li>
-                <li><i class="far fa-comments"></i><a href="#">LEAVE US A FEEDBACK</a></li>
-                <li><i class="far fa-newspaper"></i><a href="#">SUBSCRIBE TO NEWSLETTER</a></li>
-              </ul>
+                <ul class="topbar__navigation--menu-list">
+                  <li><a href="#brunchPage"><i class="fas fa-utensils"></i>  MENU</a></li>
+                  <li><a href="#feedbackPage"><i class="far fa-comments"></i>LEAVE US A FEEDBACK</a></li>
+                  <li><a href="#"><i class="far fa-newspaper"></i>SUBSCRIBE TO NEWSLETTER</a></li>
+                </ul>
           </nav>
           <i id="menu" class="fas fa-bars"></i>
     </div><!-- end of topbar-->
     
     <!--landing page-->
-    <div id="landingPage" class="landing-page" style="display:none">
+    <div id="landingPage" class="landing-page">
       <h1 class="page__header">MENU</h1>
-        <div class="landing-page__card">
+        <div class="landing-page__card" id="brunch">
             <div class="landing-page__image">
                 <img src="images/house-cured-salmon-asparagus.jpg" alt="all day brunch">
             </div>
             <div class="landing-page__category">ALL DAY BRUNCH</div>
         </div>
+        <div class="landing-page__card">
+            <div class="landing-page__image">
+                <img src="images/drinks-large.jpg" alt="drinks">
+            </div>
+            <div class="landing-page__category">DRINKS</div>
+        </div>
+        <div class="landing-page__card">
+            <div class="landing-page__image">
+                <img src="images/pumpkin-buttermilk-pancakes.jpg" alt="kids menu">
+            </div>
+            <div class="landing-page__category">KIDS MENU</div>
+        </div>
+        <div class="landing-page__card">
+            <div class="landing-page__image">
+                <img src="images/delicious-pancakes.jpg" alt="desserts">
+            </div>
+            <div class="landing-page__category">DESSERTS</div>
+        </div>
     </div>
     
     <!--manu page - all day brunch-->
-    <div id="brunchPage" class="menu-page" style="display:none">
+    <div id="brunchPage" class="menu-page">
       <div class="page__header">ALL DAY BRUNCH</div>
-      <div class="menu-page__card">
+      <div class="menu-page__card" id="1">
         <div class="menu-page__card--name">VEGGIE BREKKIE (V, GF)</div>
         <div class="menu-page__card--price">18</div>
         <img class="menu-page__card--image" src="images/veggie-brekkie.jpg" alt="veggie brekkie">
         <span class="menu-page__card--info">grilled halloumi, beetroot & carrot slaw avocado, hash brown, sprouts, balsamic reduction | add: poached egg 2.5 (ea)</span>
         <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="add item">
       </div>
-      <div class="menu-page__line"></div>
+      <div class="menu-page__line" id="2"></div>
       <div class="menu-page__card">
         <div class="menu-page__card--name">CRISPY CHICKEN BURGER & CAJUN FRIES</div>
         <div class="menu-page__card--price">20</div>
@@ -93,7 +114,7 @@ single page application, html, css and javascript
         <!--<button class="menu-page__back2top--button">Return to the top</button>-->
       </a> <!--end of menu page-->
     </div>
-    
+    <!--item, information, popup-->
     <div class="item" style="display:none">
       <div class="item__card">
         <img class="item__card--image" src="images/veggie-brekkie.jpg" alt="veggie brekkie">
@@ -111,11 +132,43 @@ single page application, html, css and javascript
         <button class="item__card--plus">+</button>
         <button class="item__card--order">ORDER</button>
       </div>
+    </div><!--end of item-->
+    <!--give us a feedback-->
+    <div class="feedback-page" id="feedbackPage" style="display:none">
+      <div class="page__header">FEEDBACK FORM</div>
+      <form>
+          <input class="feedback-form__input" type="text" name="firstname" placeholder=" Name">
+          <input class="feedback-form__input" type="text" name="lastname" placeholder=" Email">
+          <textarea class="feedback-form__textarea" name="" id="" cols="30" rows="5"></textarea>
+          <input class="feedback-form__input--submit" type="submit" value="SUBMIT">
+        </form>
     </div>
-
-    <div id="myOrder">
-      
-    </div>
+    <div id="myOrder" class="order-page">
+        <h1 class="page__header">MY ORDER</h1>
+        <div class="order-page__items">
+          <button class="order-page__items--remove">x</button>
+          <div class="order-page__items--name">VEGGIE BREKKIE (V, GF)</div>
+          <span class="order-page__items--amount">1</span>
+          <span class="order-page__items--price">$18</span>
+        </div>
+        <div class="order-page__items">
+          <button class="order-page__items--remove">x</button>
+          <div class="order-page__items--name">CRISPY CHICKEN BURGER & CAJUN FRIES</div>
+          <span class="order-page__items--amount">1</span>
+          <span class="order-page__items--price">$20</span>
+        </div>
+        <!--line-->
+        <div class="order-page__line"></div>
+        <!--final information about order-->
+        <div class="order-page__items--total">
+            <div class="order-page__items--total-total">TOTAL</div>  
+            <span class="order-page__items--total-amount">2</span>
+            <span class="order-page__items--total-price">$38</span>
+        </div>
+        <button class="order-page__button">Pay now with card</button>
+        <button class="order-page__button">I will pay at the bar</button>
+        <div class="order-page__footer">RETRUN TO MENU</div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
