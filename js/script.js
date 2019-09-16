@@ -30,6 +30,11 @@ $(document).ready(function(){
       navigate('myOrder');
       
     });
+  
+    $('.menu-page__card--circle-plus').click(function() { 
+      $('#shoppingCart').html( 
+        '<span class="fa-stack fa-2x has-badge" data-count="1" id="shoppingCart" <i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-shopping-cart fa-stack-2x" ></i></span>'); 
+  }); 
 
     //click on hamburger menu
     $('#menu').click(function() {
