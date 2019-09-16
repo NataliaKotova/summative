@@ -1,5 +1,5 @@
-function navigate(currentPage, nextPage){
-    jQuery('#' + currentPage).hide();
+function navigate(nextPage){
+    jQuery('.page').hide();
     jQuery('#' + nextPage).show();
 }
 
@@ -18,16 +18,16 @@ var items = [
 
 
 $(document).ready(function(){
-    $(".welcome-page__container--button").click(function(){
-      navigate('welcome-page','landing-page');
+    $('.welcome-page__container--button').click(function(){
+      navigate('landingPage');
     });
 
     $("#brunch").click(function(){
-      navigate('landingPage','brunchPage');
+      navigate('brunchPage');
     });
 
     $(".fa-shopping-cart").click(function(){
-      jQuery('#myOrder').show();
+      navigate('myOrder');
       
     });
 

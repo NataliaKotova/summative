@@ -16,7 +16,7 @@ single page application, html, css and javascript
   <!--body-->
   <body>
     <!--welcome page-->
-    <div id="welcome-page" class="welcome-page__container">
+    <div id="welcome-page" class="welcome-page__container page">
       <h1 class="welcome-page__container--heading">KIA ORA</h1>
       <img class="welcome-page__container--logo" src="images/logo.png" alt="logo">
       <input class="welcome-page__container--input" type="text" placeholder="Enter the table number">
@@ -44,7 +44,7 @@ single page application, html, css and javascript
     </div><!-- end of topbar-->
     
     <!--landing page-->
-    <div id="landingPage" class="landing-page">
+    <div id="landingPage" class="landing-page page">
       <h1 class="page__header">MENU</h1>
         <div class="landing-page__card" id="brunch">
             <div class="landing-page__image">
@@ -73,7 +73,7 @@ single page application, html, css and javascript
     </div>
     
     <!--manu page - all day brunch-->
-    <div id="brunchPage" class="menu-page">
+    <div id="brunchPage" class="menu-page page">
       <div class="page__header">ALL DAY BRUNCH</div>
       <div class="menu-page__card" id="1">
         <div class="menu-page__card--name">VEGGIE BREKKIE (V, GF)</div>
@@ -115,7 +115,7 @@ single page application, html, css and javascript
       </a> <!--end of menu page-->
     </div>
     <!--item, information, popup-->
-    <div class="item" style="display:none">
+    <div class="item page" style="display:none">
       <div class="item__card">
         <img class="item__card--image" src="images/veggie-brekkie.jpg" alt="veggie brekkie">
         <span class="item__card--name">VEGGIE BREKKIE (V, GF)</span>
@@ -134,7 +134,7 @@ single page application, html, css and javascript
       </div>
     </div><!--end of item-->
     <!--give us a feedback-->
-    <div class="feedback-page" id="feedbackPage" style="display:none">
+    <div class="feedback-page page" id="feedbackPage" style="display:none">
       <div class="page__header">FEEDBACK FORM</div>
       <form>
           <input class="feedback-form__input" type="text" name="firstname" placeholder=" Name">
@@ -143,7 +143,7 @@ single page application, html, css and javascript
           <input class="feedback-form__input--submit" type="submit" value="SUBMIT">
         </form>
     </div>
-    <div id="myOrder" class="order-page">
+    <div id="myOrder" class="order-page page">
         <h1 class="page__header">MY ORDER</h1>
         <div class="order-page__items">
           <button class="order-page__items--remove">x</button>
