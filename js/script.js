@@ -16,28 +16,30 @@ var items = [
   }
 ]
 
-
 $(document).ready(function(){
     $('.welcome-page__container--button').click(function(){
       navigate('landingPage');
+      $('.topbar').show();
     });
 
     $("#brunch").click(function(){
       navigate('brunchPage');
+      $('.topbar').show();
     });
 
     $(".fa-shopping-cart").click(function(){
       navigate('myOrder');
+      $('.topbar').show();
     });
 
-    $(".menu-page__card").click(function(){
-      navigate('item');
+    $(".menu-page__card--circle-plus").click(function(){
+      navigate('itemPage');
+      $('.topbar').show();
     });
-  //<i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-shopping-cart fa-stack-2x" ></i>
     
-  $('.menu-page__card--circle-plus').click(function() { 
+  $('.item__card--order').click(function() { 
       $('#shoppingCart').html( 
-        '<span class="fa-stack fa-2x has-badge" data-count="1" id="shoppingCart"</span>'); 
+        '<span class="fa-stack fa-2x has-badge" data-count="1" id="shoppingCart"></span><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-shopping-cart fa-stack-2x" ></i>'); 
   }); 
 
     //click on hamburger menu
