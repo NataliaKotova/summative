@@ -69,3 +69,17 @@
     font-size: 2.5em;
     justify-self:center;
 }
+.order-page__footer{
+    transform: rotate(90deg);
+    margin:0 auto;
+    display:block;
+    //margin-top:3em;
+    width:6em;
+}
+.order-page__footer--return2menu{
+    color:black;
+    margin:auto;
+    display:table;
+    font-size:2em;
+    margin-top:4em;
+}

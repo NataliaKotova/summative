@@ -15,6 +15,24 @@
     font-size:3em;
     vertical-align: middle;
     padding:20px;
+    width: 9em;
+    height:2.5em;
+}
+.topbar__button--yellow{
+    background-color:#EDB302;
+    border: 2px solid black;
+    border-radius:10px;
+    color:black;
+    font-size:3em;
+    vertical-align: middle;
+    padding:20px;
+    width:9em;
+    height:2.5em;
+    .fas{
+        font-size:1.5em;
+        padding-right:0.3em;
+        vertical-align: middle;
+    }
 }
 .topbar__button--bell{
     width:70px;

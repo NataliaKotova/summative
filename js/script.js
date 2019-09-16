@@ -42,9 +42,14 @@ $(document).ready(function(){
         '<span class="fa-stack fa-2x has-badge" data-count="1" id="shoppingCart"></span><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-shopping-cart fa-stack-2x" ></i>'); 
   }); 
 
+  
+  $('#menu').click(function() {
+    $('nav').toggleClass('active');
+  });
     //click on hamburger menu
-    $('#menu').click(function() {
-      $('nav').toggleClass('active');
+    $('.topbar__button--white').click(function() {
+      $('.topbar__button--white').hide();
+      $('.topbar__button--yellow').show();
     });
     $('#close').click(function(){
       $('nav').removeClass('active');

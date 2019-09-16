@@ -26,7 +26,8 @@ single page application, html, css and javascript
     
     <div class="topbar" style="display:none">
       <button class="topbar__button--white"><img class="topbar__button--bell" src="images/bell-green.png" alt="bell">call wait staff</button>
-        <span class="fa-stack fa-2x has-badge" data-count="0" id="shoppingCart">
+      <button class="topbar__button--yellow" style="display:none"><i class="fas fa-walking"></i>we are coming</button>  
+      <span class="fa-stack fa-2x has-badge" data-count="0" id="shoppingCart">
           <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
           <i class="fa fa-shopping-cart fa-stack-2x" ></i>
           </span>  
@@ -167,8 +168,12 @@ single page application, html, css and javascript
         </div>
         <button class="order-page__button">Pay now with card</button>
         <button class="order-page__button">I will pay at the bar</button>
-        <div class="order-page__footer">RETRUN TO MENU</div>
-      </div>
+        
+        
+        <span class="order-page__footer">return to menu</span>
+        <img class="order-page__footer--return2menu" src="images/uxpin-icon-set_download.png" alt="">
+          
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
