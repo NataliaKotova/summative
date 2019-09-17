@@ -14,45 +14,37 @@ body {
   margin-bottom: 1em;
   font-weight: bolder; }
 
-.welcome-page__container--background {
-  width: 50em;
-  height: 100em;
-  background-color: white;
-  opacity: 0.5; }
+.welcome-page__container {
+  background: no-repeat url("../images/welcome-2.jpg");
+  background-size: cover;
+  height: 100%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
 
 .welcome-page__container--heading {
   font-size: 80px;
   font-weight: bold;
   color: #18A369;
   letter-spacing: .015em;
-  z-index: 99; }
-
-.welcome-page__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: no-repeat url("../images/welcome-2.jpeg");
-  background-size: cover;
-  height: 100%;
-  z-index: 99; }
+  opacity: 1; }
 
 .welcome-page__container--logo {
   width: 30%;
-  margin-top: 2em;
-  z-index: 99; }
+  margin-top: 2em; }
 
 .welcome-page__container--input {
   color: #18A369;
-  background-color: white;
   border: 2px solid #18A369;
   border-radius: 10px;
   height: 100px;
   font-size: 3em;
   width: 13em;
   margin-top: 2em;
-  text-align: center;
-  z-index: 99; }
+  text-align: center; }
 
 .welcome-page__container--button {
   width: 350px;
@@ -63,8 +55,7 @@ body {
   border-radius: 10px;
   font-size: 3em;
   margin-top: 80px;
-  font-weight: bold;
-  z-index: 99; }
+  font-weight: bold; }
 
 .topbar {
   height: 10em;
@@ -218,10 +209,7 @@ nav {
   display: grid;
   grid-template-columns: 40% 45% 15%;
   grid-template-rows: 25% auto;
-  grid-template-rows: auto fit-content(800px) auto;
-  /*div{
-      border:1px solid $primaryColor;
-  }*/ }
+  grid-template-rows: auto fit-content(800px) auto; }
 
 .menu-page__card--name {
   grid-column-start: 1;
@@ -231,7 +219,6 @@ nav {
 .menu-page__card--price {
   grid-column-start: 3;
   font-size: 1em;
-  color: black;
   justify-self: center; }
 
 .menu-page__card--image {
@@ -264,13 +251,13 @@ nav {
   margin-top: 2em;
   margin-bottom: 2em; }
 
-.test {
+.menu-page__back2top--image {
   transform: rotate(180deg);
   margin: 0 auto;
   display: block;
   width: 6em; }
 
-.return {
+.menu-page__back2top--text {
   color: black;
   margin: auto;
   display: table;
@@ -482,7 +469,6 @@ nav {
   margin-right: 1em; }
 
 .order-page__footer--return2menu {
-  color: black;
   font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */

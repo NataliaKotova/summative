@@ -24,22 +24,18 @@ $(document).ready(function(){
 
     $("#brunch").click(function(){
       navigate('brunchPage');
-      $('.topbar').show();
     });
 
     $(".fa-shopping-cart").click(function(){
       navigate('myOrder');
-      $('.topbar').show();
     });
 
     $(".menu-page__card--circle-plus").click(function(){
       navigate('itemPage');
-      $('.topbar').show();
     });
     
     $(".order-page__footer").click(function(){
       navigate('landingPage');
-      $('.topbar').show();
     });
 
   $('.item__card--order').click(function() { 
@@ -58,14 +54,12 @@ $(document).ready(function(){
   
   $('.topbar__navigation--menu-go2menu').click(function() {
     navigate('landingPage');
-    $('.topbar__navigation--menu').hide();
-    $('.topbar').show();
+    $('nav').removeClass('active');
   });
 
   $('.topbar__navigation--menu-go2form').click(function() {
+    $('nav').removeClass('active');
     navigate('feedbackPage');
-    $('.topbar__navigation--menu').hide();
-    $('.feedback-page').show();
   });
 
   //click on hamburger menu
