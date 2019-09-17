@@ -120,8 +120,19 @@ nav{
         color:black;
     }
 }
-//shopping cart
-.fa-stack[data-count]:after{
+
+.fa-circle{
+    color:black;
+}
+
+.fa-stack-2x{
+    left: 0em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0em;
+}
+.badge{
     position:absolute;
     left:1.8em;
     top:-1em;
@@ -134,17 +145,7 @@ nav{
     font-weight:bold;
     background: white;
     border-style:solid;
-  }
-.fa-circle{
-    color:black;
-}
-
-.fa-stack-2x{
-    left: 0em;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 0em;
+    z-index:1;
 }
 
 

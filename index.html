@@ -33,10 +33,11 @@ single page application
         <span class="topbar__message--content">we are coming</span>
       </div>
       <button class="topbar__button--yellow" style="display:none"><i class="fas fa-walking"></i>we are coming</button>  
-      <span class="fa-stack fa-2x has-badge" data-count="0" id="shoppingCart">
+      <span class="fa-stack fa-2x" id="shoppingCart">
+          <span class="badge" id="itemsInCart">0</span>
           <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
           <i class="fa fa-shopping-cart fa-stack-2x" ></i>
-          </span>  
+      </span>  
           
           <nav class="topbar__navigation--menu">
               <img class="topbar__navigation--logo" src="images/logo.png" alt="logo">
@@ -59,19 +60,19 @@ single page application
             </div>
             <div class="landing-page__category">ALL DAY BRUNCH</div>
         </div>
-        <div class="landing-page__card">
+        <div class="landing-page__card" id="drinks">
             <div class="landing-page__image">
                 <img src="images/coffee.jpg" alt="drinks">
             </div>
             <div class="landing-page__category">DRINKS</div>
         </div>
-        <div class="landing-page__card">
+        <div class="landing-page__card" id="kidsMenu">
             <div class="landing-page__image">
                 <img src="images/kids2.jpg" alt="kids menu">
             </div>
             <div class="landing-page__category">KIDS MENU</div>
         </div>
-        <div class="landing-page__card">
+        <div class="landing-page__card" id="desserts">
             <div class="landing-page__image">
                 <img src="images/desserts.jpg" alt="desserts">
             </div>
@@ -134,9 +135,9 @@ single page application
         <input class="item__card--input" type="text" placeholder=" Name">
         <input class="item__card--input" type="text" placeholder=" Your comments">
         <button class="item__card--minus">-</button>
-        <span class="item__card--amount">1</span>
-        <button class="item__card--plus">+</button>
-        <button class="item__card--order-button">ORDER</button>
+        <span class="item__card--amount" id="itemsAmount">1</span>
+        <button class="item__card--plus" id="itemPlus">+</button>
+        <button class="item__card--order-button" id="orderButton">ORDER</button>
       </div>
     </div><!--end of item-->
     <!--give us a feedback-->

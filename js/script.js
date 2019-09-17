@@ -13,6 +13,18 @@ $(document).ready(function(){
       navigate('brunchPage');
     });
 
+    $("#drinks").click(function(){
+      navigate('brunchPage');
+    });
+
+    $("#kidsMenu").click(function(){
+      navigate('brunchPage');
+    });
+
+    $("#desserts").click(function(){
+      navigate('brunchPage');
+    });
+
     $(".fa-shopping-cart").click(function(){
       navigate('myOrder');
     });
@@ -59,6 +71,30 @@ $(document).ready(function(){
   $('#close').click(function(){
     $('nav').toggleClass('active');
   });
+//counting items
+// plus (clicked)
+$('#itemPlus').click(function(){
+  var itemsAmount=$('.item__card--amount').text();
+  var itemsNumber=Number(itemsAmount);
+  var itemsWanted=itemsNumber+1;
+  $('.item__card--amount').text(itemsWanted);
+});
+//minus (clicked)
+// $('#itemMinus').click(function(){
+//   var itemsAmount=$('.item__card--amount').text();
+//   var itemsNumber=Number(itemsAmount);
+//   var itemsWanted=itemsNumber+1;
+//   $('.item__card--amount').text(itemsWanted);
+// });
 
+//rendering value of items in cart badge
+$('#orderButton').click(function(){
+  var itemsWanted=$('#itemsAmount').text();
+  var itemsWantedNumber=Number(itemsWanted);
+  var itemsInCart=$('#itemsInCart').text();
+  var itemsInCartNumber=Number(itemsInCart);
+  var totalItems=itemsWantedNumber+itemsInCartNumber;
+  $('.badge').text(totalItems);
+});
 
 });

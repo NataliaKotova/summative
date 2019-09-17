@@ -169,7 +169,17 @@ nav {
     text-decoration: none;
     color: black; }
 
-.fa-stack[data-count]:after {
+.fa-circle {
+  color: black; }
+
+.fa-stack-2x {
+  left: 0em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 0em; }
+
+.badge {
   position: absolute;
   left: 1.8em;
   top: -1em;
@@ -181,17 +191,8 @@ nav {
   min-width: 2em;
   font-weight: bold;
   background: white;
-  border-style: solid; }
-
-.fa-circle {
-  color: black; }
-
-.fa-stack-2x {
-  left: 0em;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  top: 0em; }
+  border-style: solid;
+  z-index: 1; }
 
 .landing-page {
   padding-left: 2em;
