@@ -36,8 +36,8 @@ single page application, html, css and javascript
               <img class="topbar__navigation--logo" src="images/logo.png" alt="logo">
               <i id="close" class="fas fa-times"></i>
                 <ul class="topbar__navigation--menu-list">
-                  <li><a href="#brunchPage"><i class="fas fa-utensils"></i>  MENU</a></li>
-                  <li><a href="#feedbackPage"><i class="far fa-comments"></i>LEAVE US A FEEDBACK</a></li>
+                  <li class="topbar__navigation--menu-go2menu"><i class="fas fa-utensils"></i>  MENU</li>
+                  <li class="topbar__navigation--menu-go2form"><i class="far fa-comments"></i>LEAVE US A FEEDBACK</li>
                   <li><a href="#"><i class="far fa-newspaper"></i>SUBSCRIBE TO NEWSLETTER</a></li>
                 </ul>
           </nav>
@@ -169,9 +169,12 @@ single page application, html, css and javascript
         <button class="order-page__button">Pay now with card</button>
         <button class="order-page__button">I will pay at the bar</button>
         
-        
-        <span class="order-page__footer">return to menu</span>
-        <img class="order-page__footer--return2menu" src="images/uxpin-icon-set_download.png" alt="">
+        <div class="order-page__footer">
+          <img class="order-page__footer--image" src="images/uxpin-icon-set_download.png" alt="">
+          <span class="order-page__footer--return2menu">return to the menu options</span>
+          
+        </div>
+       
           
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -458,19 +458,20 @@ nav {
   grid-column-start: 4;
   grid-column-end: 5;
   font-size: 2.5em;
-  justify-self: center; }
+  justify-content: center; }
 
 .order-page__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em; }
+
+.order-page__footer--image {
   transform: rotate(90deg);
-  margin: 0 auto;
-  display: block;
-  width: 6em; }
+  margin-right: 1em; }
 
 .order-page__footer--return2menu {
   color: black;
-  margin: auto;
-  display: table;
-  font-size: 2em;
-  margin-top: 4em; }
+  font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */
