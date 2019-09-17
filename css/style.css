@@ -94,6 +94,25 @@ body {
   vertical-align: middle;
   margin-right: 10px; }
 
+.topbar__message {
+  font-size: 3em; }
+
+.topbar__message--image {
+  position: relative;
+  margin: 1.2em 1.2em 0em 0em;
+  width: 8em; }
+
+.fa-walking {
+  position: absolute;
+  top: 2em;
+  left: 2em; }
+
+.topbar__message--content {
+  position: absolute;
+  top: 1.8em;
+  left: 3em;
+  font-size: 1em; }
+
 .topbar__navigation--logo {
   position: absolute;
   top: 1em;
@@ -182,8 +201,10 @@ nav {
   margin-bottom: 2em; }
 
 .landing-page__image {
-  height: 25em;
+  height: 30em;
   overflow: hidden; }
+  .landing-page__image img {
+    width: 100%; }
 
 .landing-page__category {
   background-color: #18A369;

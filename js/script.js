@@ -52,7 +52,8 @@ $(document).ready(function(){
   //click on hamburger menu
   $('.topbar__button--white').click(function() {
     $('.topbar__button--white').hide();
-    $('.topbar__button--yellow').show();
+    $('.topbar__message').show();
+    // $('.topbar__button--yellow').show();
   });
 
   $('#close').click(function(){
