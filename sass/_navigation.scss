@@ -8,15 +8,11 @@
 }
 
 .topbar__button--white{
+    @include button();
     background-color:white;
     border: 2px solid $primaryColor;
-    border-radius:10px;
     color:$primaryColor;
-    font-size:3em;
     vertical-align: middle;
-    padding:20px;
-    width: 9em;
-    height:2.5em;
 }
 .topbar__button--yellow{
     background-color:#EDB302;

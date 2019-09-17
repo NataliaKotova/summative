@@ -28,18 +28,7 @@
     display:block;
     margin-bottom:1em;
 }
-.order-page__button{
-    width:60%;
-    height:3em;
-    border:2px solid $primaryColor;
-    border-radius:10px;
-    display:block;
-    margin:0 auto;
-    background-color: white;
-    font-size:2.5em;
-    margin-top:1.5em;
-    color:$primaryColor;
-}
+
 .order-page__items--remove{
     font-size:2.5em;
     justify-self:center;
@@ -69,7 +58,15 @@
     font-size: 2.5em;
     justify-content:center;
 }
-
+.order-page__button{
+    @include button();
+    display:block;
+    border:2px solid $primaryColor;
+    margin:0 auto;
+    background-color: white;
+    margin-top:1.5em;
+    color:$primaryColor;
+}
 .order-page__footer{
     display:flex;
     justify-content:center;

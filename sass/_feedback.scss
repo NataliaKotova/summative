@@ -20,12 +20,9 @@
     margin-bottom:1em;
 }
 .feedback-form__input--submit{
-    width:5em;
-    height:2em;
-    font-size:3em;
+    @include primaryButton();
     align-content: center;
     background-color:$primaryColor;
-    font-weight:bold;
     color:white;
     border-radius:10px;
     display:block;

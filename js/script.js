@@ -3,19 +3,6 @@ function navigate(nextPage){
     jQuery('#' + nextPage).show();
 }
 
-var items = [
-  {
-    id:1,
-    name:"VEGGIE BREKKIE (V, GF)",
-    price:18,
-  },
-  {
-    id:2,
-    name:"CRISPY CHICKEN BURGER & CAJUN FRIES",
-    price:20,
-  }
-]
-
 $(document).ready(function(){
     $('.welcome-page__container--button').click(function(){
       navigate('landingPage');

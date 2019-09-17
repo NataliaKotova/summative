@@ -66,15 +66,13 @@ body {
   margin-top: 2em; }
 
 .topbar__button--white {
+  font-size: 3em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
   background-color: white;
   border: 2px solid #18A369;
-  border-radius: 10px;
   color: #18A369;
-  font-size: 3em;
-  vertical-align: middle;
-  padding: 20px;
-  width: 9em;
-  height: 2.5em; }
+  vertical-align: middle; }
 
 .topbar__button--yellow {
   background-color: #EDB302;
@@ -345,7 +343,7 @@ nav {
   border: 1px solid #18A369;
   font-weight: bold; }
 
-.item__card--order {
+.item__card--order-button {
   grid-column-start: 5;
   grid-column-end: 9;
   font-size: 3em;
@@ -379,12 +377,14 @@ nav {
   margin-bottom: 1em; }
 
 .feedback-form__input--submit {
-  width: 5em;
-  height: 2em;
   font-size: 3em;
+  padding: 0.3em 1.5em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
   align-content: center;
   background-color: #18A369;
-  font-weight: bold;
   color: white;
   border-radius: 10px;
   display: block;
@@ -418,18 +418,6 @@ nav {
   display: block;
   margin-bottom: 1em; }
 
-.order-page__button {
-  width: 60%;
-  height: 3em;
-  border: 2px solid #18A369;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-  background-color: white;
-  font-size: 2.5em;
-  margin-top: 1.5em;
-  color: #18A369; }
-
 .order-page__items--remove {
   font-size: 2.5em;
   justify-self: center;
@@ -457,6 +445,17 @@ nav {
   grid-column-end: 5;
   font-size: 2.5em;
   justify-content: center; }
+
+.order-page__button {
+  font-size: 3em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  display: block;
+  border: 2px solid #18A369;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 1.5em;
+  color: #18A369; }
 
 .order-page__footer {
   display: flex;

@@ -1,0 +1,13 @@
+@mixin button(){
+    font-size:3em;
+    padding:0.5em 1em;
+    border-radius: 10px;
+}
+@mixin primaryButton(){
+    font-size:3em;
+    padding:0.3em 1.5em;
+    border-radius:10px;
+    text-transform: uppercase;
+    font-weight:bold;
+    color:$primaryButtonTextColor;
+}
