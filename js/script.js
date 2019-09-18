@@ -4,6 +4,11 @@ function navigate(nextPage){
 }
 
 $(document).ready(function(){
+  //welcome page - input, remove placeholder
+    $('#tableNumberInput').click(function(){
+      $(this).removeAttr('placeholder');
+    });
+
     $('.welcome-page__container--button').click(function(){
       navigate('landingPage');
       $('.topbar').show();
@@ -98,5 +103,7 @@ $('#orderButton').click(function(){
   var totalItems=itemsWantedNumber+itemsInCartNumber;
   $('.badge').text(totalItems);
 });
+
+
 
 });

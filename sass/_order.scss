@@ -56,7 +56,7 @@
     grid-column-start:4;
     grid-column-end:5;
     font-size: 2.5em;
-    justify-content:center;
+    justify-self:center;
 }
 .order-page__button{
     @include button();
@@ -67,6 +67,7 @@
     margin-top:1.5em;
     color:$primaryColor;
 }
+
 .order-page__footer{
     display:flex;
     justify-content:center;

@@ -90,7 +90,7 @@ body {
     vertical-align: middle; }
 
 .topbar__button--bell {
-  width: 2em;
+  width: 1.5em;
   vertical-align: middle;
   margin-right: 10px; }
 
@@ -287,10 +287,8 @@ nav {
 .item__card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 2em;
-  margin-top: 4em;
-  border-radius: 10px;
-  padding: 2em; }
+  padding: 7em;
+  padding-bottom: 5em; }
 
 .item__card--image {
   width: 100%;
@@ -319,8 +317,9 @@ nav {
 .item__card--instructions {
   grid-column-start: 1;
   grid-column-end: 8;
-  font-size: 2.5em;
-  margin-top: 1em; }
+  margin-top: 0.5em;
+  font-size: 2em;
+  color: #18A369; }
 
 .item__card--input {
   grid-column-start: 1;
@@ -466,7 +465,7 @@ nav {
   grid-column-start: 4;
   grid-column-end: 5;
   font-size: 2.5em;
-  justify-content: center; }
+  justify-self: center; }
 
 .order-page__button {
   font-size: 3em;
@@ -493,45 +492,56 @@ nav {
   font-size: 2em; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .topbar__button--white {
-    font-size: 2.5em;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    background-color: white;
-    border: 2px solid #18A369;
-    color: #18A369;
-    vertical-align: middle; }
+  .topbar {
+    margin-top: 1em;
+    height: 9em; }
+    .topbar .topbar__button--white {
+      font-size: 2.5em;
+      padding: 0.5em 1em;
+      border-radius: 10px;
+      background-color: white;
+      border: 2px solid #18A369;
+      color: #18A369;
+      vertical-align: middle; }
+    .topbar .topbar__button--bell {
+      width: 1.2em;
+      vertical-align: middle;
+      margin-right: 10px; }
+    .topbar .topbar__message {
+      font-size: 2em; }
+    .topbar .topbar__message--image {
+      position: relative;
+      margin: 2em 1.2em 0em -1em;
+      width: 12em; }
+    .topbar .fa-walking {
+      position: absolute;
+      font-size: 1.5em;
+      left: 2.3em;
+      top: 1.8em; }
+    .topbar .topbar__message--content {
+      position: absolute;
+      top: 2.8em;
+      left: 5em;
+      font-size: 1em; }
 
-  .topbar__button--bell {
-    width: 1.5em;
-    vertical-align: middle;
-    margin-right: 10px; }
+  .landing-page {
+    width: 90%;
+    margin: 0 auto;
+    display: block; }
 
-  .topbar__message {
+  .menu-page .menu-page__card--name,
+  .menu-page .menu-page__card--price {
+    font-size: 2em; }
+  .menu-page .menu-page__card--info {
     font-size: 2em; }
 
-  .topbar__message--image {
-    position: relative;
-    margin: 1.2em 1.2em 0em 0em;
-    width: 10em; }
-
-  .fa-walking {
-    position: absolute;
-    font-size: 1.5em;
-    left: 2.3em;
-    top: 1.8em; }
-
-  .topbar__message--content {
-    position: absolute;
-    top: 2.8em;
-    left: 5em;
-    font-size: 1em; }
-
-  .menu-page__card--name,
-  .menu-page__card--price {
-    font-size: 2em; }
-
-  .menu-page__card--info {
-    font-size: 2em; } }
+  .item {
+    margin-top: -5em; }
+    .item .item__card {
+      padding: 10em; }
+    .item item__card--image {
+      width: 90%; }
+    .item .item__card--input {
+      height: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */

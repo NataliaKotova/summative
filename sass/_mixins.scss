@@ -1,8 +1,11 @@
+// button - white background, green border, green font
 @mixin button(){
     font-size:3em;
     padding:0.5em 1em;
     border-radius: 10px;
 }
+
+//primary button - green background, white text (bold)
 @mixin primaryButton(){
     font-size:3em;
     padding:0.3em 1.5em;

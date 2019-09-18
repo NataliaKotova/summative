@@ -19,7 +19,7 @@ single page application
     <div id="welcome-page" class="welcome-page__container page">
           <h1 class="welcome-page__container--heading">KIA ORA</h1>
           <img class="welcome-page__container--logo" src="images/logo.png" alt="logo">
-          <input class="welcome-page__container--input" type="text" placeholder="Enter the table number">
+          <input id="tableNumberInput" class="welcome-page__container--input" type="text" placeholder="Enter the table number">
           <button class="welcome-page__container--button">START</button>
     </div>
     
@@ -62,13 +62,13 @@ single page application
         </div>
         <div class="landing-page__card" id="drinks">
             <div class="landing-page__image">
-                <img src="images/coffee.jpg" alt="drinks">
+                <img src="images/tea.jpg" alt="drinks">
             </div>
             <div class="landing-page__category">DRINKS</div>
         </div>
         <div class="landing-page__card" id="kidsMenu">
             <div class="landing-page__image">
-                <img src="images/kids2.jpg" alt="kids menu">
+                <img src="images/pancakes.jpg" alt="kids menu">
             </div>
             <div class="landing-page__category">KIDS MENU</div>
         </div>
@@ -179,6 +179,10 @@ single page application
           <img class="order-page__footer--image" src="images/uxpin-icon-set_download.png" alt="">
           <span class="order-page__footer--return2menu">return to the menu options</span>
         </div>
+
+      <div id="orderProgress" class="order-progress__page">
+
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
