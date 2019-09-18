@@ -71,11 +71,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .item{
         margin-top:-5em;
         .item__card {
-            padding:10em;
+            margin:5em;
+            padding:6em;
         }
-        item__card--image {
-            width:90%;
-        }
+
         .item__card--input {
             height:1.5em;
         }

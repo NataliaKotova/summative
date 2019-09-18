@@ -538,9 +538,8 @@ nav {
   .item {
     margin-top: -5em; }
     .item .item__card {
-      padding: 10em; }
-    .item item__card--image {
-      width: 90%; }
+      margin: 5em;
+      padding: 6em; }
     .item .item__card--input {
       height: 1.5em; } }
 
