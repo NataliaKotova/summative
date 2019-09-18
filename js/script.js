@@ -80,12 +80,14 @@ $('#itemPlus').click(function(){
   $('.item__card--amount').text(itemsWanted);
 });
 //minus (clicked)
-// $('#itemMinus').click(function(){
-//   var itemsAmount=$('.item__card--amount').text();
-//   var itemsNumber=Number(itemsAmount);
-//   var itemsWanted=itemsNumber+1;
-//   $('.item__card--amount').text(itemsWanted);
-// });
+$('#itemMinus').click(function(){
+  var itemsAmount=$('.item__card--amount').text();
+  var itemsNumber=Number(itemsAmount);
+  if(itemsNumber>1){
+    var itemsWanted=itemsNumber-1;
+    $('.item__card--amount').text(itemsWanted);
+  }
+});
 
 //rendering value of items in cart badge
 $('#orderButton').click(function(){

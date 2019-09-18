@@ -1,6 +1,6 @@
 
 .welcome-page__container{
-    background: no-repeat url("../images/welcome-2.jpg");
+    background: no-repeat url("../images/welcome-opacity20.jpg");
     background-size: cover;
     height:100%;
     align-content: center;
@@ -12,11 +12,11 @@
 }
 
 .welcome-page__container--heading{
-    font-size:80px;
+    font-size:10em;
     font-weight:bold;
     color:$primaryColor;
     letter-spacing: .015em;
-    opacity:1;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .welcome-page__container--logo{

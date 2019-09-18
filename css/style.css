@@ -15,7 +15,7 @@ body {
   font-weight: bolder; }
 
 .welcome-page__container {
-  background: no-repeat url("../images/welcome-2.jpg");
+  background: no-repeat url("../images/welcome-opacity20.jpg");
   background-size: cover;
   height: 100%;
   align-content: center;
@@ -26,11 +26,11 @@ body {
   width: 100%; }
 
 .welcome-page__container--heading {
-  font-size: 80px;
+  font-size: 10em;
   font-weight: bold;
   color: #18A369;
   letter-spacing: .015em;
-  opacity: 1; }
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
 
 .welcome-page__container--logo {
   width: 30%;
@@ -90,7 +90,7 @@ body {
     vertical-align: middle; }
 
 .topbar__button--bell {
-  width: 70px;
+  width: 2em;
   vertical-align: middle;
   margin-right: 10px; }
 
@@ -491,5 +491,47 @@ nav {
 
 .order-page__footer--return2menu {
   font-size: 2em; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .topbar__button--white {
+    font-size: 2.5em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #18A369;
+    color: #18A369;
+    vertical-align: middle; }
+
+  .topbar__button--bell {
+    width: 1.5em;
+    vertical-align: middle;
+    margin-right: 10px; }
+
+  .topbar__message {
+    font-size: 2em; }
+
+  .topbar__message--image {
+    position: relative;
+    margin: 1.2em 1.2em 0em 0em;
+    width: 10em; }
+
+  .fa-walking {
+    position: absolute;
+    font-size: 1.5em;
+    left: 2.3em;
+    top: 1.8em; }
+
+  .topbar__message--content {
+    position: absolute;
+    top: 2.8em;
+    left: 5em;
+    font-size: 1em; }
+
+  .menu-page__card--name,
+  .menu-page__card--price {
+    font-size: 2em; }
+
+  .menu-page__card--info {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=style.css.map */
