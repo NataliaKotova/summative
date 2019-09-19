@@ -181,12 +181,20 @@ single page application
         </div>
     </div>
       <div id="orderProgress" class="order-progress page" style="display:none">
-        
         <span class="order-progress__header">THANKS FOR YOUR ORDER!</span>
-        <span class="order-progress__comment">The approximate wait time is 15 minutes</span>
-        <span class="order-progress__timer"></span>
-        <span class="order-progress__title">Here is your order progress</span>
-        <div id="orderVisualisation" class="order-progress__visualisation"></div>
+        <div class="order-progress__container">
+          <span class="order-progress__container--comment">TABLE NUMBER:</span>
+          <span class="order-progress__container--table">1</span>
+        </div>
+        <div class="order-progress__container">
+          <span class="order-progress__container--comment">EST. TIME LEFT:</span>
+          <span class="order-progress__container--timer"></span>
+          <div class="order-progress__visualisation"></div>
+        </div>
+        <span class="order-progress__header">Order progress</span>
+          <div id="orderVisualisation" class="order-progress__visualisation">
+            
+          </div>
       </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>

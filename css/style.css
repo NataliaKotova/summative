@@ -494,45 +494,39 @@ nav {
 
 .order-progress__header {
   display: block;
-  margin-top: 3em; }
+  margin-top: 1em; }
 
-.order-progress__comment {
-  margin-top: 3em;
+.order-progress__container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5em;
+  margin-right: 5em;
+  justify-content: flex-start; }
+
+.order-progress__container--comment {
+  margin: 1em;
   font-size: 3em;
-  text-align: center;
-  display: block; }
+  color: #272727; }
 
-.order-progress__timer {
-  margin-top: 1em;
-  font-size: 5em;
-  text-align: center;
-  display: block;
+.order-progress__container--table,
+.order-progress__container--timer {
   color: #18A369;
+  margin-top: 1em;
+  font-size: 3em;
   font-weight: bold; }
 
-.order-progress__comment,
-.order-progress__comment {
-  font-size: 2.5em;
-  font-size: 3em; }
-
 .order-progress__visualisation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  display: flex;
+  flex-direction: column; }
 
 .order-progress__received {
-  grid-column-start: 1;
-  grid-column-end: 2;
   width: 12em; }
 
 .order-progress__comment-received {
-  grid-column-start: 1;
-  grid-column-end: 2;
   width: 11em;
   font-size: 2em; }
 
 .order-progress__preparation {
-  grid-column-start: 2;
-  grid-column-end: 3;
   width: 12em; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {

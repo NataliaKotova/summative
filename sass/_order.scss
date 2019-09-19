@@ -87,45 +87,39 @@
 .order-progress__header {
     @extend .page__header;
     display: block;
-    margin-top:3em;
-}
-.order-progress__comment {
-    margin-top:3em;
-    font-size:3em;
-    text-align: center;
-    display:block;
-}
-.order-progress__timer {
     margin-top:1em;
-    font-size: 5em;
-    text-align: center;
-    display:block;
-    color:$primaryColor;
-    font-weight:bold;
-}
-.order-progress__comment,
-.order-progress__comment {
-    font-size:2.5em;
-    font-size:3em;
-}
-.order-progress__visualisation{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
+.order-progress__container{
+    display:flex;
+    flex-direction: row;
+    margin-left:5em;
+    margin-right:5em;
+    justify-content: flex-start;
+}
+.order-progress__container--comment {
+    margin:1em;
+    font-size:3em;
+    color:$secondaryColor;
+}
+.order-progress__container--table,
+.order-progress__container--timer {
+    color:$primaryColor;
+    margin-top:1em;
+    font-size:3em;
+    font-weight:bold;
+}
+.order-progress__visualisation{
+    display: flex;
+    flex-direction:column;
+}
 .order-progress__received{
-    grid-column-start: 1;
-    grid-column-end:2;
     width:12em;
 }
 .order-progress__comment-received{
-    grid-column-start: 1;
-    grid-column-end:2;
     width:11em;
     font-size:2em;
 }
 .order-progress__preparation{
-    grid-column-start: 2;
-    grid-column-end:3;
     width:12em;
 }
