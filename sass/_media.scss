@@ -12,12 +12,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
         height:9em;
 
         .topbar__button--white {
-            font-size: 2.5em;
+            font-size: 2em;
             padding: 0.5em 1em;
             border-radius: 10px;
             background-color: white;
-            border: 2px solid #18A369;
-            color: #18A369;
+            border: 2px solid $primaryColor;
+            color: $primaryColor;
             vertical-align: middle;
         }
     
@@ -28,11 +28,17 @@ and (-webkit-min-device-pixel-ratio: 1) {
         }
         .topbar__message{
             font-size:2em;
+            
         }
         .topbar__message--image{
             position:relative;
             margin:2em 1.2em 0em -1em;
             width:12em;
+        }
+        .topbar__message--content{
+            position:absolute;
+            left:3em;
+            top:2em;
         }
         .fa-walking{
             position:absolute;
@@ -40,11 +46,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
             left:2.3em;
             top:1.8em;
         }
-        .topbar__message--content{
-            position:absolute;
-            top:2.8em;
-            left:5em;
-            font-size:1em;
+        .fa-times {
+            font-size: 1.5em;
+            top:0.8em;
+            right:1.3em;
         }
     }
     //landing page
@@ -67,11 +72,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
     
     //item-page
-
     .item{
         margin-top:-5em;
         .item__card {
-            margin:5em;
+            margin:6em;
             padding:6em;
         }
 
@@ -79,7 +83,18 @@ and (-webkit-min-device-pixel-ratio: 1) {
             height:1.5em;
         }
     }
+     //order page
+     .order-page__button {
+        font-size: 2em;
+        padding: 0.5em 1em;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+        vertical-align: middle;
+    }
 
+   
 }
 
 

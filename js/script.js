@@ -4,10 +4,15 @@ function navigate(nextPage){
 }
 
 $(document).ready(function(){
-  //welcome page - input, remove placeholder
-    $('#tableNumberInput').click(function(){
-      $(this).removeAttr('placeholder');
-    });
+  // //input, remove placeholder - welcome page
+  //   $('#tableNumberInput').click(function(){
+  //     $(this).removeAttr('placeholder');
+  //   });
+
+  // //input, remove placeholder - item page
+  //   $('.item__card--input').click(function(){
+  //     $(this).removeAttr('placeholder');
+  //   });
 
     $('.welcome-page__container--button').click(function(){
       navigate('landingPage');
