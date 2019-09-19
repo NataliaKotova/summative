@@ -7,7 +7,7 @@ html,
 body {
   height: 100%; }
 
-.page__header {
+.page__header, .order-progress__header {
   font-size: 3em;
   text-align: center;
   margin-top: 2em;
@@ -491,6 +491,49 @@ nav {
 
 .order-page__footer--return2menu {
   font-size: 2em; }
+
+.order-progress__header {
+  display: block;
+  margin-top: 3em; }
+
+.order-progress__comment {
+  margin-top: 3em;
+  font-size: 3em;
+  text-align: center;
+  display: block; }
+
+.order-progress__timer {
+  margin-top: 1em;
+  font-size: 5em;
+  text-align: center;
+  display: block;
+  color: #18A369;
+  font-weight: bold; }
+
+.order-progress__comment,
+.order-progress__comment {
+  font-size: 2.5em;
+  font-size: 3em; }
+
+.order-progress__visualisation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.order-progress__received {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 12em; }
+
+.order-progress__comment-received {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 11em;
+  font-size: 2em; }
+
+.order-progress__preparation {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 12em; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .topbar {

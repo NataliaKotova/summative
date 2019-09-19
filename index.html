@@ -45,7 +45,7 @@ single page application
                 <ul class="topbar__navigation--menu-list">
                   <li class="topbar__navigation--menu-go2menu"><i class="fas fa-utensils"></i>  MENU</li>
                   <li class="topbar__navigation--menu-go2form"><i class="far fa-comments"></i>LEAVE US A FEEDBACK</li>
-                  <li><a href="#"><i class="far fa-newspaper"></i>SUBSCRIBE TO NEWSLETTER</a></li>
+                  <li class="topbar__navigation--menu-go2progress"><i class="far fa-clock"></i>ORDER PROGRESS</li>
                 </ul>
           </nav>
           <i id="menu" class="fas fa-bars"></i>
@@ -179,9 +179,14 @@ single page application
           <img class="order-page__footer--image" src="images/uxpin-icon-set_download.png" alt="">
           <span class="order-page__footer--return2menu">return to menu</span>
         </div>
-
-      <div id="orderProgress" class="order-progress__page">
-
+    </div>
+      <div id="orderProgress" class="order-progress page" style="display:none">
+        
+        <span class="order-progress__header">THANKS FOR YOUR ORDER!</span>
+        <span class="order-progress__comment">The approximate wait time is 15 minutes</span>
+        <span class="order-progress__timer"></span>
+        <span class="order-progress__title">Here is your order progress</span>
+        <div id="orderVisualisation" class="order-progress__visualisation"></div>
       </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>

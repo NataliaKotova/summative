@@ -31,19 +31,19 @@ $(document).ready(function(){
       navigate('brunchPage');
     });
 
-    $("#desserts").click(function(){
+    $('#desserts').click(function(){
       navigate('brunchPage');
     });
 
-    $(".fa-shopping-cart").click(function(){
+    $('.fa-shopping-cart').click(function(){
       navigate('myOrder');
     });
 
-    $(".menu-page__card--circle-plus").click(function(){
+    $('.menu-page__card--circle-plus').click(function(){
       navigate('itemPage');
     });
     
-    $(".order-page__footer").click(function(){
+    $('.order-page__footer').click(function(){
       navigate('landingPage');
     });
 
@@ -52,7 +52,6 @@ $(document).ready(function(){
         '<span class="fa-stack fa-2x has-badge" data-count="1" id="shoppingCart"></span><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-shopping-cart fa-stack-2x" ></i>'); 
   }); 
 
-  
   $('#menu').click(function() {
     $('nav').toggleClass('active');
   });
@@ -69,6 +68,37 @@ $(document).ready(function(){
   $('.topbar__navigation--menu-go2form').click(function() {
     $('nav').removeClass('active');
     navigate('feedbackPage');
+  });
+
+  $('.order-page__button').click(function(){
+    navigate('orderProgress');
+  });
+
+  function addOrderReceived(){
+    $('#orderVisualisation').html( 
+      '<div class="order-progress__received"><img src="images/received.svg" alt=""></div><span class="order-progress__comment-received">Your order has been received</span>'
+  )};
+
+  $('.topbar__navigation--menu-go2progress').click(function(){
+    $('nav').removeClass('active');
+    navigate('orderProgress');
+    //rendering timer - order progress page
+    //source: https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
+      var min = 15;
+      var sec = 60;
+      setInterval(function() {
+      $(".order-progress__timer").html(min + " : " + sec);
+      sec--;
+      if (sec == 00) {
+        min--;
+        sec = 60;
+        if (min == 00) {
+          min = 15;
+        }
+      }
+    }, 1000);
+    
+    var orderStatus = setTimeout(addOrderReceived, 10000);
   });
 
   //click on hamburger menu
@@ -111,23 +141,8 @@ $('#orderButton').click(function(){
 
 
 
+
 });
 
 
-https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
 
-window.onload = function() {
-  var hour = 2;
-  var sec = 60;
-  setInterval(function() {
-    document.getElementById("timer").innerHTML = hour + " : " + sec;
-    sec--;
-    if (sec == 00) {
-      hour--;
-      sec = 60;
-      if (hour == 0) {
-        hour = 2;
-      }
-    }
-  }, 1000);
-}
