@@ -76,17 +76,17 @@ $(document).ready(function(){
 
   function addOrderReceived(){
     $('#orderVisualisation').html( 
-      '<div class="order-progress__received"><img src="images/received.png" alt=""></div><span class="order-progress__comment-received">Your order has been received</span>'
+      '<div class="order-progress__received"><img src="images/order-received-grey.png" alt=""><span class="order-progress__visualisation-icon">order received</span></div>'
   )};
 
   function addOrderCooking(){
-    $('#orderVisualisation').html( 
-      '<div class="order-progress__received"><img src="images/cooking.png" alt=""></div><span class="order-progress__comment-received">Your order has been received</span>'
+    $('#orderVisualisation').append( 
+      '<div class="order-progress__cooking"><img src="images/order-cooking-grey.png" alt=""><span class="order-progress__visualisation-icon">we\'re cooking for you</span></div>'
   )};
 
   function addOrderReady(){
-    $('#orderVisualisation').html( 
-      '<div class="order-progress__ready"><img src="images/ready.png" alt=""></div><span class="order-progress__comment-received">Your order has been received</span>'
+    $('#orderVisualisation').append( 
+      '<div class="order-progress__ready"><img src="images/order-men-grey.svg" alt=""><span class="order-progress__visualisation-icon">order is ready</span></div>'
   )};
 
   $('.topbar__navigation--menu-go2progress').click(function(){
@@ -108,9 +108,9 @@ $(document).ready(function(){
       }
     }, 1000);
     
-    var orderStatusReceived = setTimeout(addOrderReceived, 10000);
-    var orderStatusCooking = setTimeout(addOrderCooking, 20000);
-    var orderStatusReady = setTimeout(addOrderReady, 30000);
+    var orderStatusReceived = setTimeout(addOrderReceived, 3000);
+    var orderStatusCooking = setTimeout(addOrderCooking, 6000);
+    var orderStatusReady = setTimeout(addOrderReady, 9000);
   });
 
   //click on hamburger menu

@@ -84,6 +84,12 @@
 }
 
 //order progress
+.order-progress {
+    width:80%;
+    margin: auto;
+    display:block;
+    margin-top:10em;
+}
 .order-progress__header {
     @extend .page__header;
     display: block;
@@ -111,15 +117,18 @@
 }
 .order-progress__visualisation{
     display: flex;
-    flex-direction:column;
-}
-.order-progress__received{
-    width:12em;
-}
-.order-progress__comment-received{
-    width:11em;
-    font-size:2em;
-}
-.order-progress__preparation{
-    width:12em;
+    flex-direction:row;
+
+    .order-progress__received,
+    .order-progress__cooking,
+    .order-progress__ready 
+    
+    {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .order-progress__visualisation-icon{
+        width:10em;
+    }
 }

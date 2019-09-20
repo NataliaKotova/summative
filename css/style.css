@@ -492,6 +492,12 @@ nav {
 .order-page__footer--return2menu {
   font-size: 2em; }
 
+.order-progress {
+  width: 80%;
+  margin: auto;
+  display: block;
+  margin-top: 10em; }
+
 .order-progress__header {
   display: block;
   margin-top: 1em; }
@@ -517,17 +523,14 @@ nav {
 
 .order-progress__visualisation {
   display: flex;
-  flex-direction: column; }
-
-.order-progress__received {
-  width: 12em; }
-
-.order-progress__comment-received {
-  width: 11em;
-  font-size: 2em; }
-
-.order-progress__preparation {
-  width: 12em; }
+  flex-direction: row; }
+  .order-progress__visualisation .order-progress__received,
+  .order-progress__visualisation .order-progress__cooking,
+  .order-progress__visualisation .order-progress__ready {
+    display: flex;
+    flex-direction: column; }
+  .order-progress__visualisation .order-progress__visualisation-icon {
+    width: 10em; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .topbar {
