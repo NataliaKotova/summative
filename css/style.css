@@ -510,9 +510,8 @@ nav {
   justify-content: flex-start; }
 
 .order-progress__container--comment {
-  margin: 1em;
-  font-size: 3em;
-  color: #272727; }
+  font-size: 2em;
+  color: grey; }
 
 .order-progress__container--table,
 .order-progress__container--timer {
@@ -528,9 +527,11 @@ nav {
   .order-progress__visualisation .order-progress__cooking,
   .order-progress__visualisation .order-progress__ready {
     display: flex;
-    flex-direction: column; }
-  .order-progress__visualisation .order-progress__visualisation-icon {
-    width: 10em; }
+    flex-direction: column;
+    padding-right: 4em;
+    justify-content: flex-start; }
+  .order-progress__visualisation .order-progress__comment {
+    font-size: 2em; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .topbar {

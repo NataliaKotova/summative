@@ -181,7 +181,7 @@ single page application
         </div>
     </div>
       <div id="orderProgress" class="order-progress page" style="display:none">
-        <span class="order-progress__header">Sweet! We are almost ready to proceess your o</span>
+        <span class="order-progress__header">Thanks for your order!</span>
         <div class="order-progress__container">
           <span class="order-progress__container--comment">TABLE NUMBER:</span>
           <span class="order-progress__container--table">1</span>
@@ -192,7 +192,18 @@ single page application
         </div>
         <span class="order-progress__header">Order progress</span>
           <div id="orderVisualisation" class="order-progress__visualisation">
-            
+            <div class="order-progress__received">
+              <img id="orderReceived" class="order-progress__visualisation-icon" src="images/order-received-grey.png" alt="">
+              <span class="order-progress__comment">we've received your order</span>
+            </div>
+            <div class="order-progress__cooking">
+              <img id="orderCooking" class="order-progress__visualisation-icon" src="images/order-cooking-grey.png" alt="">
+              <span class="order-progress__comment">we're preparing order for you</span>
+            </div>
+            <div class="order-progress__ready">
+              <img id="orderReady" class="order-progress__visualisation-icon" src="images/order-dish-grey.png" alt="">
+              <span class="order-progress__comment">your order should be ready</span>
+            </div>
           </div>
       </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

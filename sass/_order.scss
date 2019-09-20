@@ -104,9 +104,8 @@
     justify-content: flex-start;
 }
 .order-progress__container--comment {
-    margin:1em;
-    font-size:3em;
-    color:$secondaryColor;
+    font-size:2em;
+    color:grey;
 }
 .order-progress__container--table,
 .order-progress__container--timer {
@@ -118,17 +117,15 @@
 .order-progress__visualisation{
     display: flex;
     flex-direction:row;
-
     .order-progress__received,
     .order-progress__cooking,
-    .order-progress__ready 
-    
-    {
+    .order-progress__ready {
         display:flex;
         flex-direction: column;
+        padding-right:4em;
+        justify-content: flex-start;
     }
-
-    .order-progress__visualisation-icon{
-        width:10em;
+    .order-progress__comment {
+        font-size: 2em;
     }
 }

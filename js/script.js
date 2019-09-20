@@ -74,20 +74,32 @@ $(document).ready(function(){
     navigate('orderProgress');
   });
 
+  // function addOrderReceived(){
+  //   $('#orderVisualisation').html( 
+  //     '<div class="order-progress__received"><img src="images/order-received-grey.png" alt=""><span class="order-progress__visualisation-icon">order received</span></div>'
+  // )};
+
+  // function addOrderCooking(){
+  //   $('#orderVisualisation').append( 
+  //     '<div class="order-progress__cooking"><img src="images/order-cooking-grey.png" alt=""><span class="order-progress__visualisation-icon">we\'re cooking for you</span></div>'
+  // )};
+
+  // function addOrderReady(){
+  //   $('#orderVisualisation').append( 
+  //     '<div class="order-progress__ready"><img src="images/order-dish-grey.png" alt=""><span class="order-progress__visualisation-icon">order is ready</span></div>'
+  // )};
+
   function addOrderReceived(){
-    $('#orderVisualisation').html( 
-      '<div class="order-progress__received"><img src="images/order-received-grey.png" alt=""><span class="order-progress__visualisation-icon">order received</span></div>'
-  )};
+    $('#orderReceived').attr('src','images/order-received-green.png');
+  };
 
   function addOrderCooking(){
-    $('#orderVisualisation').append( 
-      '<div class="order-progress__cooking"><img src="images/order-cooking-grey.png" alt=""><span class="order-progress__visualisation-icon">we\'re cooking for you</span></div>'
-  )};
+      $('#orderCooking').attr('src','images/order-cooking-green.png');
+  };
 
   function addOrderReady(){
-    $('#orderVisualisation').append( 
-      '<div class="order-progress__ready"><img src="images/order-men-grey.svg" alt=""><span class="order-progress__visualisation-icon">order is ready</span></div>'
-  )};
+      $('#orderReady').attr('src','images/order-ready-green.jpg');
+  };
 
   $('.topbar__navigation--menu-go2progress').click(function(){
     $('nav').removeClass('active');
