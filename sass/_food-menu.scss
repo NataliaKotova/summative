@@ -10,14 +10,28 @@
 }
 .menu-page__card{
     display:grid;
+    padding:1em;
     grid-template-columns: 40% 45% 15%;
     grid-template-rows: 25% auto;
     grid-template-rows: auto fit-content(800px) auto;
 }
+.special {
+    border:3px solid #EDB302;
+    border-radius: 10px;
+}
+.menu-page__card--special{
+    grid-column-start: 1;
+    grid-column-end:4;
+    font-size:1em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    font-weight: bolder;
+    margin-bottom:0.5em;
+}
 .menu-page__card--name{
     grid-column-start:1;
     grid-column-end:3;
-    font-size:1em;
+    
 }
 .menu-page__card--price{
     grid-column-start:3;
@@ -30,14 +44,16 @@
 }
 .menu-page__card--info{
     font-size:0.8em;
-    padding-left:1em;
-    padding-right:1em;
+    padding:1.5em;
     margin-top:0.5em;
 }
 .menu-page__card--circle-plus {
     width:6em;
     justify-self:center;
     align-self:center;
+    img{
+        width: 6em;;
+    }
 }
 
 .menu-page__back2top{

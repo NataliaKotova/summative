@@ -1,8 +1,14 @@
 .item__card{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding:7em;
     padding-bottom:5em;
+    a {
+        font-size:3em;
+        color:$secondaryColor;
+        grid-column-start: 7;
+        grid-column-end: 8;
+        margin-top:1em;
+    }
 }
 .item__card--image{
     width:100%;
@@ -27,7 +33,7 @@
     grid-column-end: 8;
     margin-top:0.5em;
     font-size:2em;
-    
+   
 }
 .item__card--instructions{
     grid-column-start: 1;
@@ -95,6 +101,10 @@
     background-color:$primaryColor;
     font-weight:bold;
 }
+#ex3{
+    max-width:100%;
+}
+
 
 
 

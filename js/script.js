@@ -4,15 +4,6 @@ function navigate(nextPage){
 }
 
 $(document).ready(function(){
-  // //input, remove placeholder - welcome page
-  //   $('#tableNumberInput').click(function(){
-  //     $(this).removeAttr('placeholder');
-  //   });
-
-  // //input, remove placeholder - item page
-  //   $('.item__card--input').click(function(){
-  //     $(this).removeAttr('placeholder');
-  //   });
 
     $('.welcome-page__container--button').click(function(){
       navigate('landingPage');
@@ -37,10 +28,6 @@ $(document).ready(function(){
 
     $('.fa-shopping-cart').click(function(){
       navigate('myOrder');
-    });
-
-    $('.menu-page__card--circle-plus').click(function(){
-      navigate('itemPage');
     });
     
     $('.order-page__footer').click(function(){
@@ -70,7 +57,8 @@ $(document).ready(function(){
     navigate('feedbackPage');
   });
 
-  $('.order-page__button').click(function(){
+  $('.topbar__navigation--menu-go2progress').click(function(){
+    $('nav').removeClass('active');
     navigate('orderProgress');
   });
 
@@ -89,19 +77,34 @@ $(document).ready(function(){
   //     '<div class="order-progress__ready"><img src="images/order-dish-grey.png" alt=""><span class="order-progress__visualisation-icon">order is ready</span></div>'
   // )};
 
+
   function addOrderReceived(){
     $('#orderReceived').attr('src','images/order-received-green.png');
+    $('#orderReceivedComment').removeClass('order-progress__comment').addClass('green');
   };
-
+  
   function addOrderCooking(){
-      $('#orderCooking').attr('src','images/order-cooking-green.png');
+    $('#orderCooking').attr('src','images/order-cooking-green.png');
+    $('#orderCookingComment').removeClass('order-progress__comment').addClass('green');
+    $('#orderReceived').attr('src','images/order-received-grey.png');
+    $('#orderReceivedComment').removeClass('green').addClass('order-progress__comment');
   };
 
   function addOrderReady(){
-      $('#orderReady').attr('src','images/order-ready-green.jpg');
+    $('#orderReady').attr('src','images/order-ready-green.jpg');
+    $('#orderReadyComment').removeClass('order-progress__comment').addClass('green');
+    $('#orderCooking').attr('src','images/order-cooking-grey.png');
+    $('#orderCookingComment').removeClass('green').addClass('order-progress__comment');
   };
 
-  $('.topbar__navigation--menu-go2progress').click(function(){
+  function addOrderComing(){
+    $('#orderComing').attr('src','images/order-men-green.jpg');
+    $('#orderComingComment').removeClass('order-progress__comment').addClass('green');
+    $('#orderReady').attr('src','images/order-dish-grey.png');
+    $('#orderReadyComment').removeClass('green').addClass('order-progress__comment');
+  };
+
+  $('.order-page__button').click(function(){
     $('nav').removeClass('active');
     navigate('orderProgress');
     //rendering timer - order progress page
@@ -123,6 +126,7 @@ $(document).ready(function(){
     var orderStatusReceived = setTimeout(addOrderReceived, 3000);
     var orderStatusCooking = setTimeout(addOrderCooking, 6000);
     var orderStatusReady = setTimeout(addOrderReady, 9000);
+    var orderStatusComing = setTimeout(addOrderComing,11000);
   });
 
   //click on hamburger menu
@@ -162,9 +166,6 @@ $('#orderButton').click(function(){
   var totalItems=itemsWantedNumber+itemsInCartNumber;
   $('.badge').text(totalItems);
 });
-
-
-
 
 });
 

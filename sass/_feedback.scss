@@ -5,7 +5,7 @@
 .feedback-form__input{
     width:99%;
     height:2em;
-    border:0.5px solid black;
+    border:0.5px solid $secondaryColor;
     border-radius:10px;
     margin-bottom:1em;
     font-size:3em;
@@ -16,7 +16,7 @@
     margin:0 auto;
     border-radius:10px;
     font-size:3em;
-    border:0.5px solid black;
+    border:0.5px solid $secondaryColor;
     margin-bottom:1em;
 }
 .feedback-form__input--submit{

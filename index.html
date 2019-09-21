@@ -40,7 +40,7 @@ single page application
       </span>  
           
           <nav class="topbar__navigation--menu">
-              <img class="topbar__navigation--logo" src="images/logo.png" alt="logo">
+              <!-- <img class="topbar__navigation--logo" src="images/logo.png" alt="logo"> -->
               <i id="close" class="fas fa-times"></i>
                 <ul class="topbar__navigation--menu-list">
                   <li class="topbar__navigation--menu-go2menu"><i class="fas fa-utensils"></i>  MENU</li>
@@ -68,13 +68,13 @@ single page application
         </div>
         <div class="landing-page__card" id="kidsMenu">
             <div class="landing-page__image">
-                <img src="images/pancakes.jpg" alt="kids menu">
+                <img src="images/pizza.jpg" alt="kids menu">
             </div>
             <div class="landing-page__category">KIDS MENU</div>
         </div>
         <div class="landing-page__card" id="desserts">
             <div class="landing-page__image">
-                <img src="images/dessertß.jpg" alt="desserts">
+                <img src="images/dessert.jpg" alt="desserts">
             </div>
             <div class="landing-page__category">DESSERTS</div>
         </div>
@@ -83,12 +83,13 @@ single page application
     <!--menu page - all day brunch-->
     <div id="brunchPage" class="menu-page page" style="display:none">
       <div class="page__header">ALL DAY BRUNCH</div>
-      <div class="menu-page__card" id="1">
+      <div class="menu-page__card special" >
+        <span class="menu-page__card--special">TODAY SPECIAL - 20% OFF</span>
         <div class="menu-page__card--name">VEGGIE BREKKIE (V, GF)</div>
         <div class="menu-page__card--price">18</div>
         <img class="menu-page__card--image" src="images/salad.jpg" alt="veggie brekkie">
         <span class="menu-page__card--info">grilled halloumi, beetroot & carrot slaw avocado, hash brown, sprouts, balsamic reduction | add: poached egg 2.5 (ea)</span>
-        <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="add item">
+        <div class="menu-page__card--circle-plus"><a href="#ex3" rel="modal:open"><img  src="images/circle-plus.png" alt="add item"></a></div>
       </div>
       <div class="menu-page__line" id="2"></div>
       <div class="menu-page__card">
@@ -96,7 +97,7 @@ single page application
         <div class="menu-page__card--price">20</div>
         <img class="menu-page__card--image" src="images/burger.jpg" alt="burger">
         <span class="menu-page__card--info">cheese, bacon, chipotle mayo slaw</span>
-        <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="add item">
+        <div class="menu-page__card--circle-plus"><a href="#ex3" rel="modal:open"><img  src="images/circle-plus.png" alt="add item"></a></div>
       </div>
       <div class="menu-page__line"></div>
       <div class="menu-page__card">
@@ -104,7 +105,7 @@ single page application
         <div class="menu-page__card--price">20</div>
         <img class="menu-page__card--image" src="images/granola.jpg" alt="granola">
         <span class="menu-page__card--info">seasonal fruit, coconut yoghurt passionfruit pulp, cashew & coconut butter</span>
-        <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="add item">
+        <div class="menu-page__card--circle-plus"><a href="#ex3" rel="modal:open"><img  src="images/circle-plus.png" alt="add item"></a></div>
       </div>
       <div class="menu-page__line"></div>
       <div class="menu-page__card">
@@ -112,9 +113,24 @@ single page application
         <div class="menu-page__card--price">20</div>
         <img class="menu-page__card--image" src="images/pancakes.jpg" alt="pancakes">
         <span class="menu-page__card--info">maple roasted bacon, chilli cinnamon butter, cocoa roasted nuts, crumbled feta, maple syrup</span>
-        <img class="menu-page__card--circle-plus" src="images/circle-plus.png" alt="add item">
+        <div class="menu-page__card--circle-plus"><a href="#ex3" rel="modal:open"><img  src="images/circle-plus.png" alt="add item"></a></div>
       </div>
       <div class="menu-page__line"></div>
+      <div class="menu-page__card">
+          <div class="menu-page__card--name">LATTE</div>
+          <div class="menu-page__card--price">5</div>
+          <img class="menu-page__card--image" src="images/coffee.jpg" alt="coffee">
+          <span class="menu-page__card--info">Steamed milk with a single shot of coffee. Milk on your choice: dairy, soy.</span>
+          <div class="menu-page__card--circle-plus"><a href="#ex3" rel="modal:open"><img  src="images/circle-plus.png" alt="add item"></a></div>
+        </div>
+      <div class="menu-page__line"></div>
+      <div class="menu-page__card">
+          <div class="menu-page__card--name">GOODBUZZ KOMBUCHA</div>
+          <div class="menu-page__card--price">5</div>
+          <img class="menu-page__card--image" src="images/drinks.jpg" alt="combucha">
+          <span class="menu-page__card--info">lemon ginger | jasmine</span>
+          <div class="menu-page__card--circle-plus"><a href="#ex3" rel="modal:open"><img  src="images/circle-plus.png" alt="add item"></a></div>
+        </div>
       <!--link back to top-->
       <a class="menu-page__back2top" href="#">
         <span class="menu-page__back2top--text">return to the top</span>
@@ -122,7 +138,8 @@ single page application
       </a> <!--end of menu page-->
     </div>
     <!--item, information-->
-    <div id="itemPage" class="item page" style="display:none">
+    
+    <div id="ex3" class="modal" id="itemPage" class="item page" style="display:none">
       <div class="item__card">
         <img class="item__card--image" src="images/salad.jpg" alt="veggie brekkie">
         <span class="item__card--name">VEGGIE BREKKIE (V, GF)</span>
@@ -138,8 +155,11 @@ single page application
         <span class="item__card--amount" id="itemsAmount">1</span>
         <button class="item__card--plus" id="itemPlus">+</button>
         <button class="item__card--order-button" id="orderButton">ORDER</button>
+        <a href="#" rel="modal:close">Close</a>
       </div>
-    </div><!--end of item-->
+
+  </div> <!--end of modal-->
+
     <!--give us a feedback-->
     <div class="feedback-page page" id="feedbackPage" style="display:none">
       <div class="page__header">FEEDBACK FORM</div>
@@ -172,7 +192,7 @@ single page application
             <span class="order-page__items--total-amount">2</span>
             <span class="order-page__items--total-price">$38</span>
         </div>
-        <button class="order-page__button">I will pay at the bar</button>
+        <button class="order-page__button">Accept my order</button>
         <!-- <button class="order-page__button">Pay now with card</button> -->
         
         <div class="order-page__footer">
@@ -181,7 +201,8 @@ single page application
         </div>
     </div>
       <div id="orderProgress" class="order-progress page" style="display:none">
-        <span class="order-progress__header">Thanks for your order!</span>
+        <span class="order-progress__header">THANKS FOR YOUR ORDER!</span>
+        <!-- <span>You can now see the progress of your order.</span> -->
         <div class="order-progress__container">
           <span class="order-progress__container--comment">TABLE NUMBER:</span>
           <span class="order-progress__container--table">1</span>
@@ -190,19 +211,23 @@ single page application
           <span class="order-progress__container--comment">EST. TIME LEFT:</span>
           <span class="order-progress__container--timer"></span>
         </div>
-        <span class="order-progress__header">Order progress</span>
+        <span class="order-progress__header">You can now see the progress of your order</span>
           <div id="orderVisualisation" class="order-progress__visualisation">
             <div class="order-progress__received">
               <img id="orderReceived" class="order-progress__visualisation-icon" src="images/order-received-grey.png" alt="">
-              <span class="order-progress__comment">we've received your order</span>
+              <span id="orderReceivedComment" class="order-progress__comment">we've received your order</span>
             </div>
             <div class="order-progress__cooking">
               <img id="orderCooking" class="order-progress__visualisation-icon" src="images/order-cooking-grey.png" alt="">
-              <span class="order-progress__comment">we're preparing order for you</span>
+              <span id="orderCookingComment" class="order-progress__comment">being prepared</span>
             </div>
             <div class="order-progress__ready">
               <img id="orderReady" class="order-progress__visualisation-icon" src="images/order-dish-grey.png" alt="">
-              <span class="order-progress__comment">your order should be ready</span>
+              <span id="orderReadyComment" class="order-progress__comment">your order should be ready</span>
+            </div>
+            <div class="order-progress__coming">
+              <img id="orderComing" class="order-progress__visualisation-icon" src="images/order-ready-grey.png" alt="">
+              <span id="orderComingComment" class="order-progress__comment">soon on the way</span>
             </div>
           </div>
       </div>
