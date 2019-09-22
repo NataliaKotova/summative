@@ -106,4 +106,19 @@
     color:$primaryColor;
     margin-top:0.5em;
 }
-
+.item__card--order-go2menu{
+    display:flex;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin-top:1em;
+    .item-card__go2menu--image{
+        transform:rotate(90deg);
+        width:4em;
+        margin-right:1em;
+    }
+    .item-card__go2menu--text{
+        align-self: center;
+        font-size: 3em;
+    }
+}

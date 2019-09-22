@@ -405,6 +405,20 @@ nav {
   color: #18A369;
   margin-top: 0.5em; }
 
+.item__card--order-go2menu {
+  display: flex;
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin-top: 1em; }
+  .item__card--order-go2menu .item-card__go2menu--image {
+    transform: rotate(90deg);
+    width: 4em;
+    margin-right: 1em; }
+  .item__card--order-go2menu .item-card__go2menu--text {
+    align-self: center;
+    font-size: 3em; }
+
 .feedback-page {
   width: 90%;
   margin: 0 auto; }
@@ -627,6 +641,8 @@ nav {
       padding: 6em; }
     .item .item__card--input {
       height: 1.5em; }
+    .item .item-card__go2menu--text {
+      font-size: 2em; }
 
   .order-page__button {
     font-size: 2em;

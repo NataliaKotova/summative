@@ -47,6 +47,10 @@ $(document).ready(function(){
       navigate('landingPage');
     });
 
+    $('.item__card--order-go2menu').click(function(){
+      navigate('landingPage');
+    });
+
   $('.item__card--order').click(function() { 
       $('#shoppingCart').html( 
         '<span class="fa-stack fa-2x has-badge" data-count="1" id="shoppingCart"></span><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-shopping-cart fa-stack-2x" ></i>'); 
