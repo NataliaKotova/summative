@@ -50,8 +50,9 @@ body {
   margin-top: 2em; }
 
 .welcome-page__container--button {
-  width: 350px;
-  height: 100px;
+  font-size: 3em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
   color: #18A369;
   border: 2px solid #18A369;
   background-color: white;
@@ -391,6 +392,19 @@ nav {
   background-color: #18A369;
   font-weight: bold; }
 
+.item__card--order-go2menu-button {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  display: block;
+  margin: 0 auto;
+  font-size: 3em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  background: white;
+  border: 2px solid #18A369;
+  color: #18A369;
+  margin-top: 0.5em; }
+
 .feedback-page {
   width: 90%;
   margin: 0 auto; }
@@ -603,6 +617,8 @@ nav {
     font-size: 2em; }
   .menu-page .menu-page__card--info {
     font-size: 2em; }
+  .menu-page .menu-page__card--circle-plus {
+    width: 4em; }
 
   .item {
     margin-top: -5em; }
@@ -625,7 +641,9 @@ nav {
     font-size: 2em;
     color: #272727; }
 
-  .order-progress__container--value {
+  .order-progress__container--value,
+  .order-progress__container--table,
+  .order-progress__container--timer {
     font-size: 2em; } }
 
 /*# sourceMappingURL=style.css.map */

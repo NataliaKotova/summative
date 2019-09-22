@@ -66,6 +66,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
             margin-left:-0.63em;
             margin-right:-0.63em;
             font-weight:bold;
+            
         }
         .menu-page__card--name,
         .menu-page__card--price {
@@ -74,6 +75,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
     
         .menu-page__card--info {
             font-size: 2em;
+        }
+        .menu-page__card--circle-plus{
+            width:4em;
         }
     }
     
@@ -103,7 +107,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
         font-size:2em;
         color:$secondaryColor;
     }
-    .order-progress__container--value{
+    .order-progress__container--value,
+    .order-progress__container--table,
+    .order-progress__container--timer
+    {
         font-size:2em;
     }
    
