@@ -56,10 +56,6 @@ $(document).ready(function(){
     $('nav').toggleClass('active');
   });
   
-  $('.fa-bars').click(function(){
-    
-  });
-  
   $('.topbar__navigation--menu-go2menu').click(function() {
     navigate('landingPage');
     $('nav').removeClass('active');
@@ -70,10 +66,7 @@ $(document).ready(function(){
     navigate('feedbackPage');
   });
 
-  $('.order-page__button').click(function(){
-    navigate('orderProgress');
-  });
-
+  //functions which replace images from grey to green color
   function addOrderReceived(){
     $('#orderReceived').attr('src','images/order-received-green.png');
   };
@@ -86,28 +79,33 @@ $(document).ready(function(){
       $('#orderReady').attr('src','images/order-ready-green.jpg');
   };
 
-  $('.topbar__navigation--menu-go2progress').click(function(){
-    $('nav').removeClass('active');
+  $('.order-page__button').click(function(){
     navigate('orderProgress');
     //rendering timer - order progress page
     //source: https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
-      var min = 15;
-      var sec = 60;
-      setInterval(function() {
-      $(".order-progress__container--timer").html(min + " : " + sec);
-      sec--;
-      if (sec == 00) {
-        min--;
-        sec = 60;
-        if (min == 00) {
-          min = 15;
-        }
+    var min = 15;
+    var sec = 60;
+    setInterval(function() {
+    $(".order-progress__container--timer").html(min + " : " + sec);
+    sec--;
+    if (sec == 00) {
+      min--;
+      sec = 60;
+      if (min == 00) {
+        min = 15;
       }
-    }, 1000);
+    }
+  }, 1000);
+  
+  var orderStatusReceived = setTimeout(addOrderReceived, 3000);
+  var orderStatusCooking = setTimeout(addOrderCooking, 6000);
+  var orderStatusReady = setTimeout(addOrderReady, 9000);
+  });
+
+  $('.topbar__navigation--menu-go2progress').click(function(){
+    $('nav').removeClass('active');
+    navigate('orderProgress');
     
-    var orderStatusReceived = setTimeout(addOrderReceived, 3000);
-    var orderStatusCooking = setTimeout(addOrderCooking, 6000);
-    var orderStatusReady = setTimeout(addOrderReady, 9000);
   });
 
   //click on hamburger menu

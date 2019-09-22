@@ -61,6 +61,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     //menu page
     .menu-page {
+        .menu-page__card--special {
+            font-size:2em;
+            margin-left:-0.63em;
+            margin-right:-0.63em;
+            font-weight:bold;
+        }
         .menu-page__card--name,
         .menu-page__card--price {
             font-size: 2em;
