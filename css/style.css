@@ -526,6 +526,8 @@ nav {
   font-size: 3em;
   color: #272727; }
 
+.order-progress__container--timer,
+.order-progress__container--table,
 .order-progress__container--value {
   color: #18A369;
   font-size: 3em;

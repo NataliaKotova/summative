@@ -179,7 +179,7 @@ single page application
         <span class="order-page__input--question">What's your table number?</span>
         <input id="tableNumberInput" class="order-page__input--field" type="text">
          </div>
-        <button class="order-page__button">Accept my order</button>
+        <button id="orderAccept" class="order-page__button">Accept my order</button>
         <!-- <button class="order-page__button">Pay now with card</button> -->
     </div>
       <div id="orderProgress" class="order-progress page" style="display:none">
@@ -190,11 +190,11 @@ single page application
           </div>
         <div class="order-progress__container">
           <span class="order-progress__container--comment">Table number: </span>
-          <span class="order-progress__container--value">1</span>
+          <span class="order-progress__container--table">1</span>
         </div>
         <div class="order-progress__container">
           <span class="order-progress__container--comment">Est. time left: </span>
-          <span class="order-progress__container--value"></span>
+          <span class="order-progress__container--timer"></span>
         </div>
         <span class="order-progress__header">Order progress</span>
           <div id="orderVisualisation" class="order-progress__visualisation">

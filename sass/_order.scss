@@ -111,7 +111,9 @@
     color:$secondaryColor;
 }
 
-.order-progress__container--value {
+.order-progress__container--timer,
+.order-progress__container--table,
+.order-progress__container--value{
     color:$primaryColor;
     font-size:3em;
     font-weight:bold;
