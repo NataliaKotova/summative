@@ -19,8 +19,7 @@ single page application
     <div id="welcome-page" class="welcome-page__container page">
           <h1 class="welcome-page__container--heading">KIA ORA</h1>
           <img class="welcome-page__container--logo" src="images/logo.png" alt="logo">
-          <input id="tableNumberInput" class="welcome-page__container--input" type="text" placeholder="Enter the table number">
-          <button class="welcome-page__container--button">START</button>
+          <button class="welcome-page__container--button">START ORDER</button>
     </div>
     
     <!--navigation top bar-->
@@ -176,37 +175,40 @@ single page application
             <span class="order-page__items--total-amount">2</span>
             <span class="order-page__items--total-price">$38</span>
         </div>
-        <button class="order-page__button">I will pay at the bar</button>
+        <div class="order-page__input">
+        <span class="order-page__input--question">What's your table number?</span>
+        <input id="tableNumberInput" class="order-page__input--field" type="text">
+         </div>
+        <button class="order-page__button">Accept my order</button>
         <!-- <button class="order-page__button">Pay now with card</button> -->
-        
-        <div class="order-page__footer">
-          <img class="order-page__footer--image" src="images/uxpin-icon-set_download.png" alt="">
-          <span class="order-page__footer--return2menu">return to menu</span>
-        </div>
     </div>
       <div id="orderProgress" class="order-progress page" style="display:none">
-        <span class="order-progress__header">Thanks for your order!</span>
+        <span class="order-progress__header">THANKS FOR YOUR ORDER!</span>
         <div class="order-progress__container">
-          <span class="order-progress__container--comment">TABLE NUMBER:</span>
-          <span class="order-progress__container--table">1</span>
+            <span class="order-progress__container--comment">Total amount to pay: </span>
+            <span class="order-progress__container--value">$25</span>
+          </div>
+        <div class="order-progress__container">
+          <span class="order-progress__container--comment">Table number: </span>
+          <span class="order-progress__container--value">1</span>
         </div>
         <div class="order-progress__container">
-          <span class="order-progress__container--comment">EST. TIME LEFT:</span>
-          <span class="order-progress__container--timer"></span>
+          <span class="order-progress__container--comment">Est. time left: </span>
+          <span class="order-progress__container--value"></span>
         </div>
         <span class="order-progress__header">Order progress</span>
           <div id="orderVisualisation" class="order-progress__visualisation">
             <div class="order-progress__received">
               <img id="orderReceived" class="order-progress__visualisation-icon" src="images/order-received-grey.png" alt="">
-              <span class="order-progress__comment">we've received your order</span>
+              <span class="order-progress__comment">order received</span>
             </div>
             <div class="order-progress__cooking">
               <img id="orderCooking" class="order-progress__visualisation-icon" src="images/order-cooking-grey.png" alt="">
-              <span class="order-progress__comment">we're preparing order for you</span>
+              <span class="order-progress__comment">preparing</span>
             </div>
             <div class="order-progress__ready">
               <img id="orderReady" class="order-progress__visualisation-icon" src="images/order-dish-grey.png" alt="">
-              <span class="order-progress__comment">your order should be ready</span>
+              <span class="order-progress__comment">should be ready soon</span>
             </div>
           </div>
       </div>

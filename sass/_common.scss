@@ -15,3 +15,17 @@ body {
     margin-bottom: 1em;
     font-weight:bolder;
 }
+.page__footer{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:3em;
+}
+
+.page__footer--image{
+    transform: rotate(90deg);
+    margin-right:1em;
+}
+.page__footer--return2menu{
+    font-size:2em;
+}

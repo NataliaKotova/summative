@@ -58,6 +58,23 @@
     font-size: 2.5em;
     justify-self:center;
 }
+
+    .order-page__input{
+        margin:3em 6em 0em 6em;
+        
+        .order-page__input--question{
+            color:$primaryColor;
+            font-size:2em;
+        }
+        .order-page__input--field{
+            border: 1px solid $secondaryColor;
+            border-radius:10px;
+            height:100px;
+            font-size: 3em;
+            width:100%;
+        }
+    }
+
 .order-page__button{
     @include button();
     display:block;
@@ -68,20 +85,6 @@
     color:$primaryColor;
 }
 
-.order-page__footer{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    margin-top:3em;
-}
-
-.order-page__footer--image{
-    transform: rotate(90deg);
-    margin-right:1em;
-}
-.order-page__footer--return2menu{
-    font-size:2em;
-}
 
 //order progress
 .order-progress {
@@ -104,26 +107,30 @@
     justify-content: flex-start;
 }
 .order-progress__container--comment {
-    font-size:2em;
-    color:grey;
+    font-size:3em;
+    color:$secondaryColor;
 }
-.order-progress__container--table,
-.order-progress__container--timer {
+
+.order-progress__container--value {
     color:$primaryColor;
-    margin-top:1em;
     font-size:3em;
     font-weight:bold;
+    margin-left:1em;
 }
 .order-progress__visualisation{
     display: flex;
     flex-direction:row;
+    margin-left:5em;
+    margin-right:5em;
     .order-progress__received,
     .order-progress__cooking,
     .order-progress__ready {
         display:flex;
         flex-direction: column;
         padding-right:4em;
-        justify-content: flex-start;
+        .order-progress__visualisation-icon{
+            width:10em;
+        }
     }
     .order-progress__comment {
         font-size: 2em;

@@ -14,6 +14,19 @@ body {
   margin-bottom: 1em;
   font-weight: bolder; }
 
+.page__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em; }
+
+.page__footer--image {
+  transform: rotate(90deg);
+  margin-right: 1em; }
+
+.page__footer--return2menu {
+  font-size: 2em; }
+
 .welcome-page__container {
   background: no-repeat url("../images/welcome-opacity20.jpg");
   background-size: cover;
@@ -35,16 +48,6 @@ body {
 .welcome-page__container--logo {
   width: 30%;
   margin-top: 2em; }
-
-.welcome-page__container--input {
-  color: #18A369;
-  border: 2px solid #18A369;
-  border-radius: 10px;
-  height: 100px;
-  font-size: 3em;
-  width: 13em;
-  margin-top: 2em;
-  text-align: center; }
 
 .welcome-page__container--button {
   width: 350px;
@@ -479,6 +482,18 @@ nav {
   font-size: 2.5em;
   justify-self: center; }
 
+.order-page__input {
+  margin: 3em 6em 0em 6em; }
+  .order-page__input .order-page__input--question {
+    color: #18A369;
+    font-size: 2em; }
+  .order-page__input .order-page__input--field {
+    border: 1px solid #272727;
+    border-radius: 10px;
+    height: 100px;
+    font-size: 3em;
+    width: 100%; }
+
 .order-page__button {
   font-size: 3em;
   padding: 0.5em 1em;
@@ -489,19 +504,6 @@ nav {
   background-color: white;
   margin-top: 1.5em;
   color: #18A369; }
-
-.order-page__footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3em; }
-
-.order-page__footer--image {
-  transform: rotate(90deg);
-  margin-right: 1em; }
-
-.order-page__footer--return2menu {
-  font-size: 2em; }
 
 .order-progress {
   width: 80%;
@@ -521,26 +523,30 @@ nav {
   justify-content: flex-start; }
 
 .order-progress__container--comment {
-  font-size: 2em;
-  color: grey; }
-
-.order-progress__container--table,
-.order-progress__container--timer {
-  color: #18A369;
-  margin-top: 1em;
   font-size: 3em;
-  font-weight: bold; }
+  color: #272727; }
+
+.order-progress__container--value {
+  color: #18A369;
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 1em; }
 
 .order-progress__visualisation {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 5em;
+  margin-right: 5em; }
   .order-progress__visualisation .order-progress__received,
   .order-progress__visualisation .order-progress__cooking,
   .order-progress__visualisation .order-progress__ready {
     display: flex;
     flex-direction: column;
-    padding-right: 4em;
-    justify-content: flex-start; }
+    padding-right: 4em; }
+    .order-progress__visualisation .order-progress__received .order-progress__visualisation-icon,
+    .order-progress__visualisation .order-progress__cooking .order-progress__visualisation-icon,
+    .order-progress__visualisation .order-progress__ready .order-progress__visualisation-icon {
+      width: 10em; }
   .order-progress__visualisation .order-progress__comment {
     font-size: 2em; }
 
@@ -606,6 +612,13 @@ nav {
     background-color: white;
     border: 1px solid #18A369;
     color: #18A369;
-    vertical-align: middle; } }
+    vertical-align: middle; }
+
+  .order-progress__container--comment {
+    font-size: 2em;
+    color: #272727; }
+
+  .order-progress__container--value {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=style.css.map */
